@@ -41,6 +41,7 @@ def help(arg=None):
         """,inline = True)
         embed.add_field(name = "General Stats:", value = """
         `fc_count`
+        `oldestnumberone`
         `top1s`
         `top50s`
         """,inline = True)
@@ -48,6 +49,7 @@ def help(arg=None):
         `first_fc`
         `first_ss`
         `ss_bounty`
+        `tragedy`
         `unique_ss`
         """,inline = True)
         embed.add_field(name = "Beatmap Lists:", value = """
@@ -67,36 +69,42 @@ def help(arg=None):
         embed.add_field(name = "Beatmap:", value = """
         `beatmaps`
         `beatmapsets`
-        `streamin stinks so much lol! :joy:`
-        `scorepersecond`
-        `scoresquared`
-        `scorev0`
-        `ssscore`
-        `weightedscore`
-        `xasumascore`
+        `maxscore`
+        `most_static`
+        `nomodscore`
+        `toprated`
+        `worst_acc`
         """,inline = True)       
-        embed.add_field(name = "Score:", value = """
-        `fcscore`
-        `notfcscore`
-        `przegranyscore`
-        `scorepersecond`
-        `scoresquared`
-        `scorev0`
-        `ssscore`
-        `weightedscore`
-        `xasumascore`
+        embed.add_field(name = "Advanced:", value = """
+        `getscores`
+        `query`
+        `queue`
+        `queuelength`
+        `scorequeue`
+        `uploadscores`
+        `uploadqueue`
         """,inline = True)
-        embed.add_field(name = "Score:", value = """
-        `fcscore`
-        `notfcscore`
-        `przegranyscore`
-        `scorepersecond`
-        `scoresquared`
-        `scorev0`
-        `ssscore`
-        `weightedscore`
-        `xasumascore`
-        """,inline = True)     
+        embed.add_field(name = "Project 2021:", value = """
+        `firstmap`
+        `stats`
+        `update`
+        `weekly`
+        `yeartodate`
+        """,inline = True)
+        embed.add_field(name = "Project Beatmaps:", value = """
+        `projectdemetori`
+        `projectdragonforce`
+        `projecthitogata`
+        `projectsao`
+        `projecttouhou`
+        `projectXYZ`
+        """,inline = True)    
+        embed.add_field(name = "Miscellaneous:", value = """
+        `generatecollection`
+        `generateosdb`
+        `getfile`
+        `register`
+        """,inline = True)         
     elif arg == "query":
         embed.title = "!query"
         embed.description = "**Description:** Allows for precise star rating filtering on typical leaderboards for registered users"
