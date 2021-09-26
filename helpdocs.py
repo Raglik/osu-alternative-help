@@ -167,6 +167,7 @@ def help(arg=None):
         embed.description = "Golden S leaderboard"
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
+-filter: specify a year or a difficulty range if applicable
 ```""", inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
@@ -178,6 +179,7 @@ def help(arg=None):
         embed.description = "Golden SS leaderboard"
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
+-filter: specify a year or a difficulty range if applicable
 ```""", inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
@@ -217,6 +219,30 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+    elif arg == "silver_s":
+        embed.title = "!silver_s"
+        embed.description = "Silver S leaderboard"
+        embed.add_field(name="Optional parameters", value="""```ahk
+-country: specify a country using the ISO 2 letter code
+-filter: specify a year or a difficulty range if applicable
+```""", inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+    elif arg == "silver_ss":
+        embed.title = "!silver_ss"
+        embed.description = "Silver SS leaderboard"
+        embed.add_field(name="Optional parameters", value="""```ahk
+-country: specify a country using the ISO 2 letter code
+-filter: specify a year or a difficulty range if applicable
+```""", inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
     elif arg == "totalhits":
         embed.title = "!totalhits"
         embed.description = "Total hits leaderboard"
@@ -227,6 +253,30 @@ def help(arg=None):
 -l: specify how many results to output. Beware the 2000 character limit  
 -p: specify the resulting page to output  
 -u: specify a user (For a space in the username, use "+")  
+```""",inline=False)
+    elif arg == "total_s":
+        embed.title = "!total_s"
+        embed.description = "Total S leaderboard"
+        embed.add_field(name="Optional parameters", value="""```ahk
+-country: specify a country using the ISO 2 letter code
+-filter: specify a year or a difficulty range if applicable
+```""", inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+    elif arg == "total_ss":
+        embed.title = "!total_ss"
+        embed.description = "Total SS leaderboard"
+        embed.add_field(name="Optional parameters", value="""```ahk
+-country: specify a country using the ISO 2 letter code
+-filter: specify a year or a difficulty range if applicable
+```""", inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
     elif arg == "query":
         embed.title = "!query"
@@ -244,5 +294,5 @@ def help(arg=None):
 -end: latest rank date of maps to include
 -country: specify a country using the ISO 2 letter code
 -year: specify a year
-```""", inline=True)
+```""", inline=False)
     return embed
