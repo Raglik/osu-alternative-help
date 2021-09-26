@@ -227,7 +227,6 @@ def help(arg=None):
 -l: specify how many results to output. Beware the 2000 character limit  
 -p: specify the resulting page to output  
 -u: specify a user (For a space in the username, use "+")  
-<<<<<<< HEAD
 ```""",inline=False)
     elif arg == "query":
         embed.title = "!query"
@@ -246,18 +245,4 @@ def help(arg=None):
 -country: specify a country using the ISO 2 letter code
 -year: specify a year
 ```""", inline=True)
-=======
-```""", inline=False)
-    elif arg == "hitsperplay":
-        embed.title = "!hitsperplay"
-        embed.description = "Hits per play leaderboard"
-        embed.add_field(name="Optional parameters", value="""```ahk
--country: Specify a country using the ISO 2 letter code  
-```""", inline=False)
-        embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit  
--p: specify the resulting page to output  
--u: specify a user (For a space in the username, use "+")  
-```""", inline=False)
->>>>>>> ee12e8e9a1e6c04e99bf2157853becb19c28be56
     return embed
