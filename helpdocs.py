@@ -132,6 +132,6 @@ def help(arg=None):
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit  
 -p: specify the resulting page to output  
--u: specify a user (if there is a space in the username, use `+`)  
+-u: specify a user (if there is a space in the username, use '+')  
 ```""",inline=False)
     return embed
