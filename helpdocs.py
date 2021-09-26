@@ -2,6 +2,7 @@ import discord
 
 def help(arg=None):
     embed = discord.Embed(colour=0xcc5288)
+#Default Help page
     if arg == None:
         embed.title = "Help"
         embed.description = "Request help for a specific command using !help command-name and help for filters can be requested using !help parameters."
@@ -104,9 +105,11 @@ def help(arg=None):
         `register`
         """,inline = True)
 
+#List of all parameters
+
     elif arg == "parameters":
         embed.title = "!help parameters"
-        embed.description = "**Description:** A list of parameters used in commands"
+        embed.description = "A list of parameters used in commands"
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -136,6 +139,8 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
         ```""", inline = False)
 
+#Global Stats commands
+
     elif arg == "a_ranks":
         embed.title = "!a_ranks"
         embed.description = "Total A rank leaderboard"
@@ -148,6 +153,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")  
 ```""",inline=False)
+
     elif arg == "clears":
         embed.title = "!clears"
         embed.description = "Clears leaderboard"
@@ -160,6 +166,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""", inline=False)
+
     elif arg == "gold_s":
         embed.title = "!gold_s"
         embed.description = "Golden S leaderboard"
@@ -172,6 +179,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "gold_ss":
         embed.title = "!gold_ss"
         embed.description = "Golden SS leaderboard"
@@ -184,6 +192,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "hitsperplay":
         embed.title = "!hitsperplay"
         embed.description = "Hitsperplay leaderboard"
@@ -195,6 +204,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "playcount":
         embed.title = "!playcount"
         embed.description = "playcount leaderboard"
@@ -206,6 +216,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "playtime":
         embed.title = "!playtime"
         embed.description = "playtime leaderboard"
@@ -217,6 +228,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "silver_s":
         embed.title = "!silver_s"
         embed.description = "Silver S leaderboard"
@@ -229,6 +241,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "silver_ss":
         embed.title = "!silver_ss"
         embed.description = "Silver SS leaderboard"
@@ -241,6 +254,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "totalhits":
         embed.title = "!totalhits"
         embed.description = "Total hits leaderboard"
@@ -252,6 +266,7 @@ def help(arg=None):
 -p: specify the resulting page to output  
 -u: specify a user (For a space in the username, use "+")  
 ```""",inline=False)
+
     elif arg == "total_s":
         embed.title = "!total_s"
         embed.description = "Total S leaderboard"
@@ -264,6 +279,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "total_ss":
         embed.title = "!total_ss"
         embed.description = "Total SS leaderboard"
@@ -276,6 +292,9 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
+#Score commands
+
     elif arg == "fcscore":
         embed.title = "!fcscore"
         embed.description = "Scores only on maps a player has FCed"
@@ -284,6 +303,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "notfcscore":
         embed.title = "!notfcscore"
         embed.description = "Scores only on maps a player has not FCed"
@@ -292,6 +312,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "przegranyscore":
         embed.title = "!przegranyscore"
         embed.description = "Score only on maps Przegrany has played when he finished the game. (August 11th, 2021)"
@@ -300,6 +321,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "rankedscore":
         embed.title = "!rankedscore"
         embed.description = "Ranked score leaderboard"
@@ -312,6 +334,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "scorepersecond":
         embed.title = "!scorepersecond"
         embed.description = "Score per second"
@@ -330,6 +353,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "scoresquared":
         embed.title = "!scoresquared"
         embed.description = "the square root of the sum of the square of every play "
@@ -338,6 +362,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "scorev0":
         embed.title = "!scorev0"
         embed.description = "Simulates how the score ranking system worked before pp existed."
@@ -346,6 +371,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "ssscore":
         embed.title = "!ssscore"
         embed.description = "Scores only on maps a player has SSed"
@@ -354,6 +380,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "totalscore":
         embed.title = "!totalscore"
         embed.description = "Total score leaderboard"
@@ -366,6 +393,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "weightedscore":
         embed.title = "!weightedscore"
         embed.description = "Ranked score leaderboard if it was weighted like pp"
@@ -374,6 +402,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
     elif arg == "xasumascore":
         embed.title = "!xasumascore"
         embed.description = "Score only on maps xasuma has played when he finished the game. (April 28th, 2019)"
@@ -382,6 +411,9 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+
+#incomplete query command as a first test
+
     elif arg == "query":
         embed.title = "!query"
         embed.description = "**Description:** Allows for precise star rating filtering on typical leaderboards for registered users"
@@ -399,4 +431,6 @@ def help(arg=None):
 -country: specify a country using the ISO 2 letter code
 -year: specify a year
 ```""", inline=False)
+
+#return the generated embed to bot
     return embed
