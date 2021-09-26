@@ -67,7 +67,7 @@ def help(arg=None):
         embed.add_field(name = "Beatmap:", value = """
         `beatmaps`
         `beatmapsets`
-        ``
+        `streamin stinks so much lol! :joy:`
         `scorepersecond`
         `scoresquared`
         `scorev0`
