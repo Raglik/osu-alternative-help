@@ -97,15 +97,6 @@ def help(arg=None):
         `weightedscore`
         `xasumascore`
         """,inline = True)     
-    elif arg == "commands":
-        embed.title = "All commands"
-        embed.description = "Request help for a specific command using !help command-name and help for filters can be requested using !help parameters."
-        embed.add_field(name = "PP commands", value = """`ppv1`
-        `totalpp`
-        `pp_fun`""", inline = True)
-        embed.add_field(name = "General stat commands", value = """`top50s`
-        `top1s`
-        `fc_count`""", inline = True)
     elif arg == "query":
         embed.title = "!query"
         embed.description = "**Description:** Allows for precise star rating filtering on typical leaderboards for registered users"
@@ -130,7 +121,7 @@ def help(arg=None):
 -country: specify a country using the ISO 2 letter code  
 -filter: specify a year or a difficulty range if applicable  
 ```""", inline=False)
-    embed.add_field(name="Global parameters", value="""```ahk
+        embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit  
 -p: specify the resulting page to output  
 -u: specify a user (if there is a space in the username, use `+`)  
