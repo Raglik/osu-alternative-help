@@ -60,16 +60,9 @@ def help(arg=None):
         `unique_fc_list`
         `unique_ss_list`
         """,inline = True)
-        embed.add_field(name = "Score:", value = """
-        `fcscore`
-        `notfcscore`
-        `przegranyscore`
-        `scorepersecond`
-        `scoresquared`
-        `scorev0`
-        `ssscore`
-        `weightedscore`
-        `xasumascore`
+        embed.add_field(name = "Mapper:", value = """
+        `mapsranked`
+        `setsranked`
         """,inline = True)
         embed.add_field(name = "Score:", value = """
         `fcscore`
