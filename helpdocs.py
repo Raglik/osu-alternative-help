@@ -46,10 +46,8 @@ def help(arg=None):
         `getscores`
         `query`
         `queue`
-        `queuelength`
         `scorequeue`
         `uploadscores`
-        `uploadqueue`
         """,inline = True)
         embed.add_field(name = "PP:", value = """
         `pp`
