@@ -276,6 +276,112 @@ def help(arg=None):
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
+    elif arg == "fcscore":
+        embed.title = "!fcscore"
+        embed.description = "Scores only on maps a player has FCed"
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+    elif arg == "notfcscore":
+        embed.title = "!notfcscore"
+        embed.description = "Scores only on maps a player has not FCed"
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+    elif arg == "przegranyscore":
+        embed.title = "!przegranyscore"
+        embed.description = "Score only on maps Przegrany has played when he finished the game. (August 11th, 2021)"
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+    elif arg == "rankedscore":
+        embed.title = "!rankedscore"
+        embed.description = "Ranked score leaderboard"
+        embed.add_field(name="Optional parameters", value="""```ahk
+-country: specify a country using the ISO 2 letter code
+-filter: specify a year or a difficulty range if applicable
+```""", inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+    elif arg == "scorepersecond":
+        embed.title = "!scorepersecond"
+        embed.description = "Score per second"
+        embed.add_field(name="Optional parameters", value="""```ahk
+-min: minimal star rating of maps to include (inclusive)  
+-max: maximal star rating of maps to include (exclusive)  
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+-year: specify a year  
+```""", inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+    elif arg == "scoresquared":
+        embed.title = "!scoresquared"
+        embed.description = "the square root of the sum of the square of every play "
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+    elif arg == "scorev0":
+        embed.title = "!scorev0"
+        embed.description = "Simulates how the score ranking system worked before pp existed."
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+    elif arg == "ssscore":
+        embed.title = "!ssscore"
+        embed.description = "Scores only on maps a player has SSed"
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+    elif arg == "totalscore":
+        embed.title = "!totalscore"
+        embed.description = "Total score leaderboard"
+        embed.add_field(name="Optional parameters", value="""```ahk
+-country: specify a country using the ISO 2 letter code
+-filter: specify a year or a difficulty range if applicable
+```""", inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+    elif arg == "weightedscore":
+        embed.title = "!weightedscore"
+        embed.description = "Ranked score leaderboard if it was weighted like pp"
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+    elif arg == "xasumascore":
+        embed.title = "!xasumascore"
+        embed.description = "Score only on maps xasuma has played when he finished the game. (April 28th, 2019)"
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
     elif arg == "query":
         embed.title = "!query"
         embed.description = "**Description:** Allows for precise star rating filtering on typical leaderboards for registered users"
