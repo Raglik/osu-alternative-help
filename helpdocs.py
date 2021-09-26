@@ -13,45 +13,25 @@ def help(arg=None):
         `hitsperplay`
         `playcount`
         `playtime`
-        `pp`
-        `rankedscore`
         `silver_s`
         `silver_ss`
         `totalhits`
         `total_s`
         `total_ss`
-        `totalscore`
         """,inline = True)
         embed.add_field(name = "Score:", value = """
         `fcscore`
         `notfcscore`
         `przegranyscore`
+        `rankedscore`
         `scorepersecond`
         `scoresquared`
         `scorev0`
         `ssscore`
+        `totalscore`
         `weightedscore`
         `xasumascore`
-        """,inline = True)
-        embed.add_field(name = "PP:", value = """
-        `pp_fun`
-        `ppv1`
-        `ppv1_unstable`
-        `totalpp`
-        """,inline = True)
-        embed.add_field(name = "General Stats:", value = """
-        `fc_count`
-        `oldestnumberone`
-        `top1s`
-        `top50s`
-        """,inline = True)
-        embed.add_field(name = "Custom:", value = """
-        `first_fc`
-        `first_ss`
-        `ss_bounty`
-        `tragedy`
-        `unique_ss`
-        """,inline = True)
+        """,inline = True)        
         embed.add_field(name = "Beatmap Lists:", value = """
         `first_fc_list`
         `first_ss_list`
@@ -61,10 +41,29 @@ def help(arg=None):
         `neverbeenssed`
         `unique_fc_list`
         `unique_ss_list`
+        """,inline = True)        
+        embed.add_field(name = "Advanced:", value = """
+        `getscores`
+        `query`
+        `queue`
+        `queuelength`
+        `scorequeue`
+        `uploadscores`
+        `uploadqueue`
         """,inline = True)
-        embed.add_field(name = "Mapper:", value = """
-        `mapsranked`
-        `setsranked`
+        embed.add_field(name = "PP:", value = """
+        `pp`
+        `pp_fun`
+        `ppv1`
+        `ppv1_unstable`
+        `totalpp`
+        """,inline = True)
+        embed.add_field(name = "Custom:", value = """
+        `first_fc`
+        `first_ss`
+        `ss_bounty`
+        `tragedy`
+        `unique_ss`
         """,inline = True)
         embed.add_field(name = "Beatmap:", value = """
         `beatmaps`
@@ -75,22 +74,6 @@ def help(arg=None):
         `toprated`
         `worst_acc`
         """,inline = True)       
-        embed.add_field(name = "Advanced:", value = """
-        `getscores`
-        `query`
-        `queue`
-        `queuelength`
-        `scorequeue`
-        `uploadscores`
-        `uploadqueue`
-        """,inline = True)
-        embed.add_field(name = "Project 2021:", value = """
-        `firstmap`
-        `stats`
-        `update`
-        `weekly`
-        `yeartodate`
-        """,inline = True)
         embed.add_field(name = "Project Beatmaps:", value = """
         `projectdemetori`
         `projectdragonforce`
@@ -98,7 +81,24 @@ def help(arg=None):
         `projectsao`
         `projecttouhou`
         `projectXYZ`
-        """,inline = True)    
+        """,inline = True)        
+        embed.add_field(name = "Project 2021:", value = """
+        `firstmap`
+        `stats`
+        `update`
+        `weekly`
+        `yeartodate`
+        """,inline = True)        
+        embed.add_field(name = "General Stats:", value = """
+        `fc_count`
+        `oldestnumberone`
+        `top1s`
+        `top50s`
+        """,inline = True)            
+        embed.add_field(name = "Mapper:", value = """
+        `mapsranked`
+        `setsranked`
+        """,inline = True)
         embed.add_field(name = "Miscellaneous:", value = """
         `generatecollection`
         `generateosdb`
