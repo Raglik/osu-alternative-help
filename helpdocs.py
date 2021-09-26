@@ -64,9 +64,9 @@ def help(arg=None):
         `mapsranked`
         `setsranked`
         """,inline = True)
-        embed.add_field(name = "Score:", value = """
-        `fcscore`
-        `notfcscore`
+        embed.add_field(name = "Beatmap:", value = """
+        `beatmaps`
+        `beatmapsets`
         `przegranyscore`
         `scorepersecond`
         `scoresquared`
