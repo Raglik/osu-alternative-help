@@ -1413,8 +1413,6 @@ See !help for list of commands
         embed.title = "!skillissue"
         
     elif arg == "abababa":
-        embed.add_field(name="Command parameter", value="""```
-<:abababababa:879511022786990090>
-```""",inline=False)
+        embed.title = "<:abababababa:879511022786990090>"
 #return the generated embed to bot
     return embed
