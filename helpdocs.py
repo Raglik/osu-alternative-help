@@ -121,7 +121,7 @@ def help(arg=None):
 -o: leaderboard option in multi-purpose commands
 -letter: X XH SH S A B C D
 -is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true / false
--order: score, length, approved_date, accuracy, ar, od and etc.
+-order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -420,7 +420,7 @@ def help(arg=None):
         embed.title = "!first_fc_list"
         embed.description = "Generates a list of first fcs. User lists may be inaccurate."
         embed.add_field(name="Optional parameters", value="""```ahk
--order: score, length, approved_date, accuracy, ar, od and etc.
+-order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -446,7 +446,7 @@ def help(arg=None):
         embed.title = "!first_ss_list"
         embed.description = "Generates a list of first ss's. User lists may be inaccurate."
         embed.add_field(name="Optional parameters", value="""```ahk
--order: score, length, approved_date, accuracy, ar, od and etc.
+-order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -476,7 +476,7 @@ def help(arg=None):
 -fc-max: maximum amount of FC count
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
--order: score, length, approved_date, accuracy, ar, od and etc.
+-order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -506,7 +506,7 @@ def help(arg=None):
 -ss-max: maximum amount of FC count
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
--order: score, length, approved_date, accuracy, ar, od and etc.
+-order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -532,7 +532,7 @@ def help(arg=None):
         embed.title = "!neverbeenssed"
         embed.description = "Returns a list of maps that have never been SSed that are at least 30 days old."
         embed.add_field(name="Optional parameters", value="""```ahk
--order: score, length, approved_date, accuracy, ar, od and etc.
+-order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -557,7 +557,7 @@ def help(arg=None):
         embed.title = "!neverbeenfced"
         embed.description = "Returns a list of maps that have never been FCed that are at least 7 days old."
         embed.add_field(name="Optional parameters", value="""```ahk
--order: score, length, approved_date, accuracy, ar, od and etc.
+-order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -582,7 +582,7 @@ def help(arg=None):
         embed.title = "!unique_fc_list"
         embed.description = "Generates a list of maps which only have 1 FC."
         embed.add_field(name="Optional parameters", value="""```ahk
--order: score, length, approved_date, accuracy, ar, od and etc.
+-order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -608,7 +608,7 @@ def help(arg=None):
         embed.title = "!unique_ss_list"
         embed.description = "Generates a list of maps which only have 1 SS."
         embed.add_field(name="Optional parameters", value="""```ahk
--order: score, length, approved_date, accuracy, ar, od and etc.
+-order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -645,7 +645,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
 -is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
--order: score, length, approved_date, accuracy, ar, od and etc.
+-order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -1001,7 +1001,7 @@ def help(arg=None):
 -mode: 0 = standard, 1 = taiko, 2 = ctb, 3 = mania. Defaults to 0
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
--order: score, length, approved_date, accuracy, ar, od and etc.
+-order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
