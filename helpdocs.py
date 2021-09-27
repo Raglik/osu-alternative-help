@@ -1413,7 +1413,7 @@ See !help for list of commands
         embed.title = "!skillissue"
         
     elif arg == "abababa":
-        embed=discord.Embed(color=0xc85050)
+        embed.color=0xc85050 
         embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/653927651618193428.gif?size=96")
 #return the generated embed to bot
     return embed
