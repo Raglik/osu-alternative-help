@@ -1400,7 +1400,7 @@ See !help for list of commands
 ```""",inline=False)
 
     elif arg == "streamin":
-        embed.title = "streamin"
+        embed.title = "!streamin"
         embed.description = "stinks"
 
     elif arg == "me":
@@ -1413,6 +1413,7 @@ See !help for list of commands
         embed.title = "!skillissue"
         
     elif arg == "abababa":
-        embed.title = "<:abababababa:879511022786990090>"
+        embed=discord.Embed(color=0xc85050)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/653927651618193428.gif?size=96")
 #return the generated embed to bot
     return embed
