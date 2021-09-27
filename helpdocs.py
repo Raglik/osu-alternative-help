@@ -644,7 +644,7 @@ def help(arg=None):
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
--is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true / false
+-is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
 -order: od, ar, cs, length, approved_date
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
@@ -676,7 +676,7 @@ def help(arg=None):
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
--is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true / false
+-is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
 -order: od, ar, cs, length, approved_date
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
@@ -686,6 +686,7 @@ def help(arg=None):
 -year: specify a year
 -country: specify a country using the ISO 2 letter code
 -unplayed: true/false
+-registered: true/false
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
@@ -709,7 +710,7 @@ def help(arg=None):
                                               Maximum amount of scores a user is allowed to queue is 1000. To check the queue time, use !queuelength."
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
--is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true / false
+-is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
 -start: earliest rank date of maps to include
