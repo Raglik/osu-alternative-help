@@ -119,8 +119,8 @@ def help(arg=None):
 -o: leaderboard option in multi-purpose commands
 -letter: X XH SH S A B C D
 -is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true / false
--order: the order in which to sort the result
--direction: the direction in which to output the results
+-order: od, ar, cs, length, approved_date
+-direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
 -start: earliest rank date of maps to include
@@ -406,6 +406,222 @@ def help(arg=None):
     elif arg == "xasumascore":
         embed.title = "!xasumascore"
         embed.description = "Score only on maps xasuma has played when he finished the game. (April 28th, 2019)"
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+#Beatmap lists commands
+
+    elif arg == "first_fc_list":
+        embed.title = "!first_fc_list"
+        embed.description = "Generates a list of first fcs. User lists may be inaccurate."
+        embed.add_field(name="Optional parameters", value="""```ahk
+-order: od, ar, cs, length, approved_date
+-direction: desc, asc
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+-time: minimum interval between rank date and play date
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+        ```""", inline = False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "first_ss_list":
+        embed.title = "!first_ss_list"
+        embed.description = "Generates a list of first ss's. User lists may be inaccurate."
+        embed.add_field(name="Optional parameters", value="""```ahk
+-order: od, ar, cs, length, approved_date
+-direction: desc, asc
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+-time: minimum interval between rank date and play date
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+        ```""", inline = False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "least_fced":
+        embed.title = "!least_fced"
+        embed.description = "Returns a list of beatmaps ordered by their FC count (starts at 0)."
+        embed.add_field(name="Command parameters", value="""```ahk
+-fc-min: minimum amount of FC count  
+-fc-max: maximum amount of FC count
+```""",inline=False)
+        embed.add_field(name="Optional parameters", value="""```ahk
+-order: od, ar, cs, length, approved_date
+-direction: desc, asc
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+-time: minimum interval between rank date and play date
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+        ```""", inline = False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "least_ssed":
+        embed.title = "!least_ssed"
+        embed.description = "Returns a list of beatmaps ordered by their SS count (starts at 0)."
+        embed.add_field(name="Command parameters", value="""```ahk
+-ss-min: minimum amount of FC count  
+-ss-max: maximum amount of FC count
+```""",inline=False)
+        embed.add_field(name="Optional parameters", value="""```ahk
+-order: od, ar, cs, length, approved_date
+-direction: desc, asc
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+-time: minimum interval between rank date and play date
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+        ```""", inline = False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "neverbeenssed":
+        embed.title = "!neverbeenssed"
+        embed.description = "Returns a list of maps that have never been SSed that are at least 30 days old."
+        embed.add_field(name="Optional parameters", value="""```ahk
+-order: od, ar, cs, length, approved_date
+-direction: desc, asc
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+-time: minimum interval between rank date and play date
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+        ```""", inline = False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+```""",inline=False)
+
+    elif arg == "neverbeenfced":
+        embed.title = "!neverbeenfced"
+        embed.description = "Returns a list of maps that have never been FCed that are at least 7 days old."
+        embed.add_field(name="Optional parameters", value="""```ahk
+-order: od, ar, cs, length, approved_date
+-direction: desc, asc
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+-time: minimum interval between rank date and play date
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+        ```""", inline = False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+```""",inline=False)
+
+    elif arg == "unique_fc_list":
+        embed.title = "!unique_fc_list"
+        embed.description = "Generates a list of maps which only have 1 FC."
+        embed.add_field(name="Optional parameters", value="""```ahk
+-order: od, ar, cs, length, approved_date
+-direction: desc, asc
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+-time: minimum interval between rank date and play date
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+        ```""", inline = False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "unique_ss_list":
+        embed.title = "!unique_ss_list"
+        embed.description = "Generates a list of maps which only have 1 SS."
+        embed.add_field(name="Optional parameters", value="""```ahk
+-order: od, ar, cs, length, approved_date
+-direction: desc, asc
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+-time: minimum interval between rank date and play date
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+        ```""", inline = False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
