@@ -33,7 +33,7 @@ def help(arg=None):
         `weightedscore`
         `xasumascore`
         """,inline = True)        
-        embed.add_field(name = "Beatmap Lists:", value = """
+        embed.add_field(name = "Custom Beatmap Lists:", value = """
         `first_fc_list`
         `first_ss_list`
         `least_fced`
@@ -67,6 +67,7 @@ def help(arg=None):
         """,inline = True)
         embed.add_field(name = "Beatmap:", value = """
         `beatmaps`
+        `beatmaplist`
         `beatmapsets`
         `maxscore`
         `most_static`
@@ -89,7 +90,7 @@ def help(arg=None):
         `weekly`
         `yeartodate`
         """,inline = True)        
-        embed.add_field(name = "General Stats:", value = """
+        embed.add_field(name = "Other Stats:", value = """
         `fc_count`
         `oldestnumberone`
         `top1s`
@@ -115,7 +116,7 @@ def help(arg=None):
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
-        ```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
 -o: leaderboard option in multi-purpose commands
 -letter: X XH SH S A B C D
@@ -131,14 +132,14 @@ def help(arg=None):
 -filter: specify a year or a difficulty range if applicable
 -country: specify a country using the ISO 2 letter code
 -unplayed: true/false
-        ```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
 -tags: queue a subset of maps with given tags
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-        ```""", inline = False)
+```""",inline=False)
 
 #Global Stats commands
 
@@ -148,7 +149,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -161,12 +162,12 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
-```""", inline=False)
+```""",inline=False)
 
     elif arg == "gold_s":
         embed.title = "!gold_s"
@@ -174,7 +175,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -187,7 +188,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -199,7 +200,7 @@ def help(arg=None):
         embed.description = "Hitsperplay leaderboard"
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -211,7 +212,7 @@ def help(arg=None):
         embed.description = "playcount leaderboard"
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -223,7 +224,7 @@ def help(arg=None):
         embed.description = "playtime leaderboard"
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -236,7 +237,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -249,7 +250,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -261,7 +262,7 @@ def help(arg=None):
         embed.description = "Total hits leaderboard"
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code  
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit  
 -p: specify the resulting page to output  
@@ -274,7 +275,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -287,7 +288,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -329,7 +330,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -348,7 +349,7 @@ def help(arg=None):
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
 -year: specify a year  
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -388,7 +389,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -434,7 +435,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -460,7 +461,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -490,7 +491,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-        ```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -520,7 +521,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -546,7 +547,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -571,7 +572,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-        ```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -596,7 +597,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -622,7 +623,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -640,7 +641,7 @@ def help(arg=None):
         status in conjuction with -mods 1
         • 1,1.06,1.12,1.19,1.25,1.33,1.41
 -mods 1: Returns the amount of beatmaps based on the mod score (use in conjunction -status)
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
 -is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true / false
@@ -652,14 +653,14 @@ def help(arg=None):
 -end: latest rank date of maps to include
 -year: specify a year
 -unplayed: true/false
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
 -tags: queue a subset of maps with given tags
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -672,7 +673,7 @@ def help(arg=None):
         embed.add_field(name="Command parameters", value="""```ahk
 -o: score, completion
 -status: sliderbreak
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
 -is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true / false
@@ -685,14 +686,14 @@ def help(arg=None):
 -year: specify a year
 -country: specify a country using the ISO 2 letter code
 -unplayed: true/false
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
 -tags: queue a subset of maps with given tags
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -704,7 +705,8 @@ def help(arg=None):
 
     elif arg == "queue":
         embed.title = "!queue"
-        embed.description = "**Description:** Queues up a player for a full check of a specified set of beatmaps. Please use extensive parameters to limit the set. Maximum amount of scores a user is allowed to queue is 1000. To check the queue time, use !queuelength."
+        embed.description = "**Description:** Queues up a player for a full check of a specified set of beatmaps. Please use extensive parameters to limit the set. \
+                                              Maximum amount of scores a user is allowed to queue is 1000. To check the queue time, use !queuelength."
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
 -is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true / false
@@ -714,14 +716,14 @@ def help(arg=None):
 -end: latest rank date of maps to include
 -year: specify a year
 -unplayed: true/false
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
 -tags: queue a subset of maps with given tags
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -739,7 +741,7 @@ def help(arg=None):
         embed.add_field(name="Command parameters", value="""```ahk
 -b: Which beatmap id to check
 -u: Which user id to check
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Example", value="""```ahk
 !scorequeue -u Kilgar -b 75
 ```""",inline=False)
@@ -750,11 +752,12 @@ def help(arg=None):
 
     elif arg == "uploadscores":
         embed.title = "!uploadscores"
-        embed.description = "**Description:** Upload a .csv file from the score fetcher (>scorefetcher) which will import the scores into the database. Attach the .csv with the command, if it works should display a sending message. To check the queue time, use !uploadqueue."
+        embed.description = "**Description:** Upload a .csv file from the score fetcher (>scorefetcher) which will import the scores into the database. \
+                                              Attach the .csv with the command, if it works should display a sending message. To check the queue time, use !uploadqueue."
         embed.add_field(name="Command parameters", value="""```ahk
 -b: Which beatmap id to check
 -u: Which user id to check
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Example", value="""```ahk
 !scorequeue -u Kilgar -b 75
 ```""",inline=False)
@@ -767,7 +770,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -786,7 +789,7 @@ def help(arg=None):
         • LONGMAPSONLY: LONGS MAPS ONLY
         • HIDDEN: HIDDEN ONLY
         • NODTNOHR NO DT NO HR
-```""", inline=False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -795,7 +798,8 @@ def help(arg=None):
 
     elif arg == "ppv1":
         embed.title = "!ppv1"
-        embed.description = "**Description:** The first performance point system leaderboards; however, the algorithm is not public knowledge so it is just a rough guess of how it worked."
+        embed.description = "**Description:** The first performance point system leaderboards; however, the algorithm is not public knowledge \
+                                              so it is just a rough guess of how it worked."
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -804,7 +808,8 @@ def help(arg=None):
 
     elif arg == "ppv1_unstable":
         embed.title = "!ppv1_unstable"
-        embed.description = "**Description:** The first performance point system leaderboards; however, the algorithm is not public knowledge so it is just a rough guess of how it worked and pp values are not inflated."
+        embed.description = "**Description:** The first performance point system leaderboards; however, the algorithm is not public knowledge \
+                                              so it is just a rough guess of how it worked and pp values are not inflated."
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -843,7 +848,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -868,7 +873,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -893,7 +898,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -909,7 +914,7 @@ def help(arg=None):
 • 50: 1x50 only score for an SS
 • miss: 1 miss only score for an SS
 • x: 1 miss only score for an FC
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -933,7 +938,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
@@ -957,11 +962,432 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
-```""", inline = False)
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+#Beatmap commands
+
+    elif arg == "beatmaps":
+        embed.title = "!beatmaps"
+        embed.description = "Returns statistics of a set of beatmaps"
+        embed.add_field(name="Command parameters", value="""```ahk
+-o: Operation to perform. Defaults to count of every beatmap
+        • count: Returns the amount of beatmaps that fit the criteria
+        • length: Returns the total length of beatmaps that fit the criteria
+-mode: 0 = standard, 1 = taiko, 2 = ctb, 3 = mania. Defaults to 0
+```""",inline=False)
+        embed.add_field(name="Optional parameters", value="""```ahk
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-length-min, -length-max
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+```""",inline=False)
+
+    elif arg == "beatmaplist":
+        embed.title = "!beatmaplist"
+        embed.description = "Lists every osu! standard map."
+        embed.add_field(name="Command parameters", value="""```ahk
+-mode: 0 = standard, 1 = taiko, 2 = ctb, 3 = mania. Defaults to 0
+```""",inline=False)
+        embed.add_field(name="Optional parameters", value="""```ahk
+-order: od, ar, cs, length, approved_date
+-direction: desc, asc
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+```""",inline=False)
+
+    elif arg == "beatmapsets":
+        embed.title = "!beatmapsets"
+        embed.description = "Returns statistics of beatmap sets"
+        embed.add_field(name="Command parameters", value="""```ahk
+-o: Operation to perform. Defaults to count of every beatmap
+        • count: Returns the amount of beatmap sets that fit the criteria
+        • length: Returns the total length of beatmap sets that fit the criteria
+-mode: 0 = standard, 1 = taiko, 2 = ctb, 3 = mania. Defaults to 0
+```""",inline=False)
+        embed.add_field(name="Optional parameters", value="""```ahk
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-length-min, -length-max
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+```""",inline=False)
+
+    elif arg == "maxscore":
+        embed.title = "!maxscore"
+        embed.description = "Outputs the sum of the best play on each map contained in the filter."
+        embed.add_field(name="Optional parameters", value="""```ahk
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+```""",inline=False)
+
+    elif arg == "most_static":
+        embed.title = "!most_static"
+        embed.description = "Returns maps in the database with the least amount of movement in the top 50 leaderboard. (Currently Broken)"
+        embed.add_field(name="Optional parameters", value="""```ahk
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+```""",inline=False)
+
+    elif arg == "nomodcore":
+        embed.title = "!nomodscore"
+        embed.description = "Outputs the sum of the best nomod play on each map contained in the filter."
+        embed.add_field(name="Optional parameters", value="""```ahk
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+```""",inline=False)
+
+    elif arg == "toprated":
+        embed.title = "!toprated"
+        embed.description = "Returns maps in the database with the highest user ratings"
+        embed.add_field(name="Optional parameters", value="""```ahk
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+```""",inline=False)
+
+    elif arg == "worst_acc":
+        embed.title = "!worst_acc"
+        embed.description = "Returns maps in the database for the worst acc on the global leaderboards."
+        embed.add_field(name="Optional parameters", value="""```ahk
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+```""",inline=False)
+
+#Project Beatmap Commands
+
+    elif arg == "projectdemetori":
+        embed.title = "!projectdemetori"
+        embed.description = "Leaderboard for maps tagged with Demetori."
+        embed.add_field(name="Command parameters", value="""```ahk
+-o: ss, fc, clears, score
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "projectdragonforce":
+        embed.title = "!projectdragonforce"
+        embed.description = "Leaderboard for maps tagged with Dragonforce."
+        embed.add_field(name="Command parameters", value="""```ahk
+-o: ss, fc, clears, score
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "projecthitogata":
+        embed.title = "!projecthitogata"
+        embed.description = "Leaderboard for the 50 diff mapset known as Hitogata sung by HIMEHINA and hosted by Ryuusei Aika featuring 49 different mappers excluding Ryuusei \
+                             including: bossandy, -Nanako-, Niva, Firika, deetz, Narcissu, lv9, Beomsan, Present, Starfy, papple104, - Frontier -, semaphore, Lami, Trynna, \
+                             Ujimatcha, rui, Frey, jonathanlfj, LMT, -ClariS-, appleeaterx, tomadoi, -Nanaka-, AIR, z1085684963, CoLouRed GlaZeE, ScubDomino, Silky, moph, \
+                             Necho, Kalibe, Shizuku-, kanor, Len, irotuk, contagious, melloe, Bariton, xLolicore-, Regou, Luscent, Yusomi, Jounzan, Yugu, ak74, val0108, \
+                             -[Pino]- and Taeyang."
+        embed.add_field(name="Command parameters", value="""```ahk
+-o: ss, fc, clears, score
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "projectsao":
+        embed.title = "!projectsao"
+        embed.description = "Leaderboard for maps tagged with the hit anime sensation Sword Art Online."
+        embed.add_field(name="Command parameters", value="""```ahk
+-o: ss, fc, clears, score
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "projecttouhou":
+        embed.title = "!projecttouhou"
+        embed.description = "Leaderboard for maps tagged with touhou."
+        embed.add_field(name="Command parameters", value="""```ahk
+-o: ss, fc, clears, score
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "projectXYZ":
+        embed.title = "!projectXYZ"
+        embed.description = "Specific star rating range leaderboards."
+        embed.add_field(name="Command parameters", value="""```ahk
+-o: ss, fc, clears, score
+-v: 5.00, 6.00 (use in conjunction with -o)
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "projectdemetori":
+        embed.title = "!projectdemetori"
+        embed.description = "Leaderboard for maps tagged with demetori."
+        embed.add_field(name="Command parameters", value="""```ahk
+-o: ss, fc, clears, score
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+#Project 2021 commands
+
+    elif arg == "firstmap":
+        embed.title = "!firstmap"
+        embed.description = "Returns the first beatmap set of a given week."
+        embed.add_field(name="Command parameters", value="""```ahk
+-w: The week to output. Defaults to this week
+```""",inline=False)
+
+    elif arg == "stats":
+        embed.title = "!stats"
+        embed.description = "Returns one user's ranking for each week in project 2021."
+        embed.add_field(name="Command parameters", value="""```ahk
+-o: Leaderboard type. ss, fc, clears, plays, score
+-u: User to lookup (optional)
+```""",inline=False)
+
+    elif arg == "update":
+        embed.title = "!update"
+        embed.description = "Refresh bot output for Project 2021 commands."
+
+    elif arg == "weekly":
+        embed.title = "!weekly"
+        embed.description = " Returns a leaderboard for one week in project 2021."
+        embed.add_field(name="Command parameters", value="""```ahk
+-o: Leaderboard type. ss, fc, clears, plays, score
+-w: The week to output. Defaults to this week
+-u: User to lookup (optional)
+```""",inline=False)
+
+    elif arg == "yeartodate":
+        embed.title = "!yeartodate"
+        embed.description = "Returns a leaderboard for the entirety of project 2021."
+        embed.add_field(name="Command parameters", value="""```ahk
+-o: Leaderboard type. fc, clears, plays, score, ss, s, silver_s, gold_s, etc
+-u: User to lookup (optional)
+-o: Beatmap difficulty filter. easy, normal, hard, insane, extra, extreme
+```""",inline=False)
+
+#Other stats command
+
+    elif arg == "fc_count":
+        embed.title = "!fc_count"
+        embed.description = "**Description:** Total FC counts for users"
+        embed.add_field(name="Required parameters", value="""```ahk
+-filter: Specify a year (use full for every year)
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "oldestnumberone":
+        embed.title = "!oldestnumberone"
+        embed.description = "**Description:** oldest number ones <user ID> | <beatmap ID>"
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+```""",inline=False)
+
+    elif arg == "top1s":
+        embed.title = "!top1s"
+        embed.description = "**Description:** Global #1 leaderboards"
+        embed.add_field(name="Required parameters", value="""```ahk
+-filter: Specify a year (use full for every year)
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "top50s":
+        embed.title = "!top50s"
+        embed.description = "**Description:** Top 50 global leaderboards."
+        embed.add_field(name="Required parameters", value="""```ahk
+-filter: Specify a year (use full for every year)
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+#Mapper commands
+
+    elif arg == "mapsranked":
+        embed.title = "!mapsranked"
+        embed.description = "**Description:** Returns a leaderboard for the most difficulties ranked by a mapper."
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "setsranked":
+        embed.title = "!setsranked"
+        embed.description = "**Description:** Returns a leaderboard for the most sets ranked by a mapper."
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+#Miscellaneous commands
+
+    elif arg == "generatecollection":
+        embed.title = "!generatecollection"
+        embed.description = "**Description:** Uses the specified filters to create an osu collection. Best imported using collection manager."
+        embed.add_field(name="Command parameters", value="""```ahk
+-o: External information to include to the dataset (neverbeenssed, neverbeenfced, status, mods)
+-status: used in conjunction with -o status or -o mods, allows for the same filtering as !getscores
+```""",inline=False)
+        embed.add_field(name="Optional parameters", value="""```ahk
+-letter: X XH SH S A B C D
+-is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true / false
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+-rank: number of rank #
+-unplayed: true/false
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "generateosdb":
+        embed.title = "!generateosdb"
+        embed.description = "**Description:** Uses the specified filters to create an osu collection. Best imported using collection manager."
+        embed.add_field(name="Command parameters", value="""```ahk
+-o: External information to include to the dataset (neverbeenssed, neverbeenfced, status, mods)
+-status: used in conjunction with -o status or -o mods, allows for the same filtering as !getscores
+```""",inline=False)
+        embed.add_field(name="Optional parameters", value="""```ahk
+-letter: X XH SH S A B C D
+-is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true / false
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+-rank: number of rank #
+-unplayed: true/false
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "getfile":
+        embed.title = "!getfile"
+        embed.description = "**Description:** Returns the entire list in a file, if discord allows it."
+        embed.add_field(name="Command parameters", value="""```ahk
+-type: List to fetch. neverbeenssed, neverbeenfced
+```""",inline=False)
+
+    elif arg == "register":
+        embed.title = "!register"
+        embed.description = "**Description:** Registers a player for more frequent updates"
+        embed.add_field(name="Required parameter", value="""```ahk
+-u: Username or user id if username does not work
 ```""",inline=False)
 
 #return the generated embed to bot
