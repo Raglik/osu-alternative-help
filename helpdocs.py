@@ -1390,5 +1390,31 @@ def help(arg=None):
 -u: Username or user id if username does not work
 ```""",inline=False)
 
+#Secret Commands
+
+    elif arg == "help":
+        embed.title = "!help"
+        embed.description = "**Description:** Command for seeing every command"
+        embed.add_field(name="Command parameter", value="""```ahk
+See !help for list of commands
+```""",inline=False)
+
+    elif arg == "streamin":
+        embed.title = "streamin"
+        embed.description = "stinks"
+
+    elif arg == "me":
+        embed.title = "no"
+
+    elif arg == "you":
+        embed.title = "no"
+
+    elif arg == "!!":
+        embed.title = "!skillissue"
+        
+    elif arg == "abababa":
+        embed.add_field(name="Command parameter", value="""```
+<:abababababa:879511022786990090>
+```""",inline=False)
 #return the generated embed to bot
     return embed
