@@ -7,105 +7,105 @@ def help(arg=None):
         embed.title = "Help"
         embed.description = "Request help for a specific command using !help command-name and help for filters can be requested using !help parameters."
         embed.add_field(name = "Global Stats:", value = """
-        `a_ranks`
-        `clears`
-        `gold_s`
-        `gold_ss`
-        `hitsperplay`
-        `playcount`
-        `playtime`
-        `silver_s`
-        `silver_ss`
-        `totalhits`
-        `total_s`
-        `total_ss`
-        """,inline = True)
+`a_ranks`
+`clears`
+`gold_s`
+`gold_ss`
+`hitsperplay`
+`playcount`
+`playtime`
+`silver_s`
+`silver_ss`
+`totalhits`
+`total_s`
+`total_ss`
+""",inline = True)
         embed.add_field(name = "Score:", value = """
-        `fcscore`
-        `notfcscore`
-        `przegranyscore`
-        `rankedscore`
-        `scorepersecond`
-        `scoresquared`
-        `scorev0`
-        `ssscore`
-        `totalscore`
-        `weightedscore`
-        `xasumascore`
+`fcscore`
+`notfcscore`
+`przegranyscore`
+`rankedscore`
+`scorepersecond`
+`scoresquared`
+`scorev0`
+`ssscore`
+`totalscore`
+`weightedscore`
+`xasumascore`
         """,inline = True)        
         embed.add_field(name = "Custom Beatmap Lists:", value = """
-        `first_fc_list`
-        `first_ss_list`
-        `least_fced`
-        `least_ssed`
-        `neverbeenfced`
-        `neverbeenssed`
-        `unique_fc_list`
-        `unique_ss_list`
-        """,inline = True)        
+`first_fc_list`
+`first_ss_list`
+`least_fced`
+`least_ssed`
+`neverbeenfced`
+`neverbeenssed`
+`unique_fc_list`
+`unique_ss_list`
+""",inline = True)        
         embed.add_field(name = "Advanced:", value = """
-        `getscores`
-        `query`
-        `queue`
-        `scorequeue`
-        `uploadscores`
-        """,inline = True)
+`getscores`
+`query`
+`queue`
+`scorequeue`
+`uploadscores`
+""",inline = True)
         embed.add_field(name = "PP:", value = """
-        `pp`
-        `pp_fun`
-        #ppv1
-        #ppv1_unstable
-        `totalpp`
-        """,inline = True)
+`pp`
+`pp_fun`
+`ppv1`
+`ppv1_unstable`
+`totalpp`
+""",inline = True)
         embed.add_field(name = "Custom:", value = """
-        `first_fc`
-        `first_ss`
-        `ss_bounty`
-        `tragedy`
-        `unique_fc`
-        `unique_ss`
-        """,inline = True)
+`first_fc`
+`first_ss`
+`ss_bounty`
+`tragedy`
+`unique_fc`
+`unique_ss`
+""",inline = True)
         embed.add_field(name = "Beatmap:", value = """
-        `beatmaps`
-        `beatmaplist`
-        `beatmapsets`
-        `maxscore`
-        `most_static`
-        `nomodscore`
-        `toprated`
-        `worst_acc`
-        """,inline = True)       
+`beatmaps`
+`beatmaplist`
+`beatmapsets`
+`maxscore`
+`most_static`
+`nomodscore`
+`toprated`
+`worst_acc`
+""",inline = True)       
         embed.add_field(name = "Project Beatmaps:", value = """
-        `projectdemetori`
-        `projectdragonforce`
-        `projecthitogata`
-        `projectsao`
-        `projecttouhou`
-        `projectXYZ`
-        """,inline = True)        
+`projectdemetori`
+`projectdragonforce`
+`projecthitogata`
+`projectsao`
+`projecttouhou`
+`projectXYZ`
+""",inline = True)        
         embed.add_field(name = "Project 2021:", value = """
-        `firstmap`
-        `stats`
-        `update`
-        `weekly`
-        `yeartodate`
-        """,inline = True)        
+`firstmap`
+`stats`
+`update`
+`weekly`
+`yeartodate`
+""",inline = True)        
         embed.add_field(name = "Other Stats:", value = """
-        `fc_count`
-        `oldestnumberone`
-        `top1s`
-        `top50s`
-        """,inline = True)            
+`fc_count`
+`oldestnumberone`
+`top1s`
+`top50s`
+""",inline = True)            
         embed.add_field(name = "Mapper:", value = """
-        `mapsranked`
-        `setsranked`
-        """,inline = True)
+`mapsranked`
+`setsranked`
+""",inline = True)
         embed.add_field(name = "Miscellaneous:", value = """
-        `generatecollection`
-        `generateosdb`
-        `getfile`
-        `register`
-        """,inline = True)
+`generatecollection`
+`generateosdb`
+`getfile`
+`register`
+""",inline = True)
 
 #List of all parameters
 
