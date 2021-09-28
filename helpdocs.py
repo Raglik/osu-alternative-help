@@ -95,6 +95,7 @@ def help(arg=None):
 `oldestnumberone`
 `top1s`
 `top50s`
+`most_medals`
 """,inline = True)            
         embed.add_field(name = "Mapper:", value = """
 `mapsranked`
@@ -1285,6 +1286,18 @@ def help(arg=None):
         embed.description = "**Description:** Top 50 global leaderboards."
         embed.add_field(name="Required parameters", value="""```ahk
 -filter: Specify a year (use full for every year)
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 2000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "most_medals":
+        embed.title = "!most_medals"
+        embed.description = "Medal count leaderboard"
+        embed.add_field(name="Optional parameters", value="""```ahk
+-country: specify a country using the ISO 2 letter code
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
