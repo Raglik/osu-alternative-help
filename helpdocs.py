@@ -793,26 +793,6 @@ def help(arg=None):
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
 
-#    elif arg == "ppv1":
-#        embed.title = "!ppv1"
-#        embed.description = "**Description:** The first performance point system leaderboards; however, the algorithm is not public knowledge \
-#                                              so it is just a rough guess of how it worked."
-#        embed.add_field(name="Global parameters", value="""```ahk
-#-l: specify how many results to output. Beware the 2000 character limit
-#-p: specify the resulting page to output
-#-u: specify a user (For a space in the username, use "+")
-#```""",inline=False)
-
-#    elif arg == "ppv1_unstable":
-#        embed.title = "!ppv1_unstable"
-#        embed.description = "**Description:** The first performance point system leaderboards; however, the algorithm is not public knowledge \
-#                                              so it is just a rough guess of how it worked and pp values are not inflated."
-#        embed.add_field(name="Global parameters", value="""```ahk
-#-l: specify how many results to output. Beware the 2000 character limit
-#-p: specify the resulting page to output
-#-u: specify a user (For a space in the username, use "+")
-#```""",inline=False)
-
     elif arg == "totalpp":
         embed.title = "!totalpp"
         embed.description = "**Description:** PP Leaderboard if PP wasn't weighted."
