@@ -1298,6 +1298,7 @@ def help(arg=None):
         embed.description = "Medal count leaderboard"
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
+-rankedscore: min. score for a user to be on the board
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 2000 character limit
