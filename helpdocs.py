@@ -754,9 +754,9 @@ def help(arg=None):
         embed.title = "!uploadscores"
         embed.description = "**Description:** Upload a .csv file from the score fetcher (>scorefetcher) which will import the scores into the database. \
                                               Attach the .csv with the command, if it works should display a sending message. To check the queue time, use !uploadqueue."
-        embed.add_field(name="Command parameters", value="""```diff
+        embed.add_field(name="Command parameters", value="""**```diff
 - NONE
-```""",inline=False)
+```**""",inline=False)
 
 #PP commands
 
