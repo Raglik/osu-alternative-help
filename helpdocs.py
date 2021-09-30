@@ -114,7 +114,7 @@ def help(arg=None):
         embed.title = "!help parameters"
         embed.description = "A list of parameters used in commands"
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -152,7 +152,7 @@ def help(arg=None):
 -filter: specify a year or a difficulty range if applicable
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")  
 ```""",inline=False)
@@ -165,7 +165,7 @@ def help(arg=None):
 -filter: specify a year or a difficulty range if applicable
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -178,7 +178,7 @@ def help(arg=None):
 -filter: specify a year or a difficulty range if applicable
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -191,7 +191,7 @@ def help(arg=None):
 -filter: specify a year or a difficulty range if applicable
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -203,7 +203,7 @@ def help(arg=None):
 -country: specify a country using the ISO 2 letter code
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -215,7 +215,7 @@ def help(arg=None):
 -country: specify a country using the ISO 2 letter code
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -227,7 +227,7 @@ def help(arg=None):
 -country: specify a country using the ISO 2 letter code
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -240,7 +240,7 @@ def help(arg=None):
 -filter: specify a year or a difficulty range if applicable
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -253,7 +253,7 @@ def help(arg=None):
 -filter: specify a year or a difficulty range if applicable
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -265,7 +265,7 @@ def help(arg=None):
 -country: specify a country using the ISO 2 letter code  
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit  
+-l: specify how many results to output. Beware the 4000 character limit  
 -p: specify the resulting page to output  
 -u: specify a user (For a space in the username, use "+")  
 ```""",inline=False)
@@ -278,7 +278,7 @@ def help(arg=None):
 -filter: specify a year or a difficulty range if applicable
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -291,7 +291,7 @@ def help(arg=None):
 -filter: specify a year or a difficulty range if applicable
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -302,7 +302,7 @@ def help(arg=None):
         embed.title = "!fcscore"
         embed.description = "Scores only on maps a player has FCed"
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -311,7 +311,7 @@ def help(arg=None):
         embed.title = "!notfcscore"
         embed.description = "Scores only on maps a player has not FCed"
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -320,7 +320,7 @@ def help(arg=None):
         embed.title = "!przegranyscore"
         embed.description = "Score only on maps Przegrany has played when he finished the game. (August 11th, 2021)"
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -333,7 +333,7 @@ def help(arg=None):
 -filter: specify a year or a difficulty range if applicable
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -352,7 +352,7 @@ def help(arg=None):
 -year: specify a year  
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -361,7 +361,7 @@ def help(arg=None):
         embed.title = "!scoresquared"
         embed.description = "the square root of the sum of the square of every play "
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -370,7 +370,7 @@ def help(arg=None):
         embed.title = "!scorev0"
         embed.description = "Simulates how the score ranking system worked before pp existed."
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -379,7 +379,7 @@ def help(arg=None):
         embed.title = "!ssscore"
         embed.description = "Scores only on maps a player has SSed"
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -392,7 +392,7 @@ def help(arg=None):
 -filter: specify a year or a difficulty range if applicable
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -401,7 +401,7 @@ def help(arg=None):
         embed.title = "!weightedscore"
         embed.description = "Ranked score leaderboard if it was weighted like pp"
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -410,7 +410,7 @@ def help(arg=None):
         embed.title = "!xasumascore"
         embed.description = "Score only on maps xasuma has played when he finished the game. (April 28th, 2019)"
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -438,7 +438,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -464,7 +464,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -494,7 +494,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -524,7 +524,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -550,7 +550,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 ```""",inline=False)
 
@@ -575,7 +575,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 ```""",inline=False)
 
@@ -600,7 +600,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -626,7 +626,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -663,7 +663,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -695,7 +695,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -768,7 +768,7 @@ def help(arg=None):
 -filter: specify a year or a difficulty range if applicable
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -787,7 +787,7 @@ def help(arg=None):
         • NODTNOHR NO DT NO HR
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -797,7 +797,7 @@ def help(arg=None):
 #        embed.description = "**Description:** The first performance point system leaderboards; however, the algorithm is not public knowledge \
 #                                              so it is just a rough guess of how it worked."
 #        embed.add_field(name="Global parameters", value="""```ahk
-#-l: specify how many results to output. Beware the 2000 character limit
+#-l: specify how many results to output. Beware the 4000 character limit
 #-p: specify the resulting page to output
 #-u: specify a user (For a space in the username, use "+")
 #```""",inline=False)
@@ -807,7 +807,7 @@ def help(arg=None):
 #        embed.description = "**Description:** The first performance point system leaderboards; however, the algorithm is not public knowledge \
 #                                              so it is just a rough guess of how it worked and pp values are not inflated."
 #        embed.add_field(name="Global parameters", value="""```ahk
-#-l: specify how many results to output. Beware the 2000 character limit
+#-l: specify how many results to output. Beware the 4000 character limit
 #-p: specify the resulting page to output
 #-u: specify a user (For a space in the username, use "+")
 #```""",inline=False)
@@ -820,7 +820,7 @@ def help(arg=None):
 -filter: Specify a year (use full for every year)
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -847,7 +847,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -872,7 +872,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -897,7 +897,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -913,7 +913,7 @@ def help(arg=None):
 • x: 1 miss only score for an FC
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -937,7 +937,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -961,7 +961,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1015,7 +1015,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 ```""",inline=False)
 
@@ -1122,7 +1122,7 @@ def help(arg=None):
 -o: ss, fc, clears, score
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1134,7 +1134,7 @@ def help(arg=None):
 -o: ss, fc, clears, score
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1150,7 +1150,7 @@ def help(arg=None):
 -o: ss, fc, clears, score
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1162,7 +1162,7 @@ def help(arg=None):
 -o: ss, fc, clears, score
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1174,7 +1174,7 @@ def help(arg=None):
 -o: ss, fc, clears, score
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1187,7 +1187,7 @@ def help(arg=None):
 -v: 5.00, 6.00 (use in conjunction with -o)
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1199,7 +1199,7 @@ def help(arg=None):
 -o: ss, fc, clears, score
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1252,7 +1252,7 @@ def help(arg=None):
 -filter: Specify a year (use full for every year)
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1261,7 +1261,7 @@ def help(arg=None):
         embed.title = "!oldestnumberone"
         embed.description = "**Description:** oldest number ones <user ID> | <beatmap ID>"
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 ```""",inline=False)
 
@@ -1272,7 +1272,7 @@ def help(arg=None):
 -filter: Specify a year (use full for every year)
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1284,7 +1284,7 @@ def help(arg=None):
 -filter: Specify a year (use full for every year)
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1297,7 +1297,7 @@ def help(arg=None):
 -rankedscore: min. score for a user to be on the board
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1308,7 +1308,7 @@ def help(arg=None):
         embed.title = "!mapsranked"
         embed.description = "**Description:** Returns a leaderboard for the most difficulties ranked by a mapper."
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1317,7 +1317,7 @@ def help(arg=None):
         embed.title = "!setsranked"
         embed.description = "**Description:** Returns a leaderboard for the most sets ranked by a mapper."
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1350,7 +1350,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
@@ -1381,7 +1381,7 @@ def help(arg=None):
 -artist: queue a subset of maps with a given artist name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 2000 character limit
+-l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
