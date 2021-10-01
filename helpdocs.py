@@ -121,7 +121,8 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -o: leaderboard option in multi-purpose commands
 -letter: X XH SH S A B C D
--is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true / false
+-is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
+-replay: true/false
 -order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
@@ -646,6 +647,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
 -is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
+-replay: true/false
 -order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
@@ -752,7 +754,7 @@ def help(arg=None):
 
     elif arg == "uploadscores":
         embed.title = "!uploadscores"
-        embed.description = "**Description:** Upload a .csv file from the score fetcher (>scorefetcher) which will import the scores into the database. \
+        embed.description = "**Description:** Upload a .csv file from the [score fetcher](https://github.com/respektive/osu-score-fetcher-cli) which will import the scores into the database. \
                                               Attach the .csv with the command, if it works should display a sending message. To check the queue time, use !uploadqueue."
         embed.add_field(name="Command parameters", value="""**```diff
 - NONE
