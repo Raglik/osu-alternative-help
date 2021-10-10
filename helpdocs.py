@@ -74,22 +74,23 @@ def help(arg=None):
 `nomodscore`
 `toprated`
 `worst_acc`
-""",inline = True)       
-        embed.add_field(name = "Project Beatmaps:", value = """
-`projectdemetori`
-`projectdragonforce`
-`projecthitogata`
-`projectsao`
-`projecttouhou`
-`projectXYZ`
-""",inline = True)        
-        embed.add_field(name = "Project 2021:", value = """
-`firstmap`
-`stats`
-`update`
-`weekly`
-`yeartodate`
-""",inline = True)        
+""",inline = True) 
+# Project commands (move to one command showing all of these later.)      
+#         embed.add_field(name = "Project Beatmaps:", value = """
+# `projectdemetori`
+# `projectdragonforce`
+# `projecthitogata`
+# `projectsao`
+# `projecttouhou`
+# `projectXYZ`
+# """,inline = True)        
+#         embed.add_field(name = "Project 2021:", value = """
+# `firstmap`
+# `stats`
+# `update`
+# `weekly`
+# `yeartodate`
+# """,inline = True)        
         embed.add_field(name = "Other Stats:", value = """
 `fc_count`
 `oldestnumberone`
