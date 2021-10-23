@@ -142,6 +142,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
 
 #Global Stats commands
