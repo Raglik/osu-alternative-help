@@ -53,10 +53,11 @@ def help(arg=None):
         embed.add_field(name = "PP:", value = """
 `pp`
 `pp_fun`
-`ppv1`
-`ppv1_unstable`
 `totalpp`
 """,inline = True)
+# add back to the field when they work again        
+#`ppv1`
+#`ppv1_unstable`
         embed.add_field(name = "Custom:", value = """
 `first_fc`
 `first_ss`
