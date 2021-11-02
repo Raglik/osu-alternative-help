@@ -639,7 +639,7 @@ def help(arg=None):
 
     elif arg == "getscores":
         embed.title = "!getscores"
-        embed.description = "**Description:** Returns maps in the database for a user based on specific criteria."
+        embed.description = "Returns maps in the database for a user based on specific criteria."
         embed.add_field(name="Command parameters", value="""```ahk
 -status: Returns the amount of beatmaps based on the specified criteria
         • sliderbreak, miss, ss
@@ -677,7 +677,7 @@ def help(arg=None):
 
     elif arg == "missingscore":
         embed.title = "!missingscore"
-        embed.description = "**Description:** Returns an ordered list of plays based on how much score you're msising compared to the #1 play on the map."
+        embed.description = "Returns an ordered list of plays based on how much score you're msising compared to the #1 play on the map."
         embed.add_field(name="Command parameters", value="""```ahk
 -o: nomodscore
 ```""",inline=False)
@@ -710,7 +710,7 @@ def help(arg=None):
 
     elif arg == "query":
         embed.title = "!query"
-        embed.description = "**Description:** Allows for precise star rating filtering on typical leaderboards for registered users"
+        embed.description = "Allows for precise star rating filtering on typical leaderboards for registered users"
         embed.add_field(name="Command parameters", value="""```ahk
 -o: score, completion, pp
 -status: sliderbreak
@@ -746,7 +746,7 @@ def help(arg=None):
 
     elif arg == "queue":
         embed.title = "!queue"
-        embed.description = "**Description:** Queues up a player for a full check of a specified set of beatmaps. Please use extensive parameters to limit the set. \
+        embed.description = "Queues up a player for a full check of a specified set of beatmaps. Please use extensive parameters to limit the set. \
                                               Maximum amount of scores a user is allowed to queue is 1000. To check the queue time, use !queuelength."
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
@@ -775,11 +775,11 @@ def help(arg=None):
 
     elif arg == "queuelength":
         embed.title = "!queuelength"
-        embed.description = "**Description:** Checks how long the !queue will take."
+        embed.description = "Checks how long the !queue will take."
 
     elif arg == "scorequeue":
         embed.title = "!scorequeue"
-        embed.description = "**Description:** Queues up a single beatmap for a single player."
+        embed.description = "Queues up a single beatmap for a single player."
         embed.add_field(name="Command parameters", value="""```ahk
 -b: Which beatmap id to check
 -u: Which user id to check
@@ -792,10 +792,6 @@ def help(arg=None):
     elif arg == "fcpp":
         embed.title = "!fcpp"
         embed.description = "Weighing pp plays based on how many FCs there are, how popular the map is, and how hard the map is and ignoring mods"
-        embed.add_field(name="Optional parameters", value="""```ahk
--country: specify a country using the ISO 2 letter code
--filter: specify a year or a difficulty range if applicable
-```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
@@ -817,7 +813,7 @@ def help(arg=None):
 
     elif arg == "pp_fun":
         embed.title = "!pp_fun"
-        embed.description = "**Description:** PP leaderboards with only specific types of maps."
+        embed.description = "PP leaderboards with only specific types of maps."
         embed.add_field(name="Command parameters", value="""```ahk
 -o: Operation to perform. Defaults to count
         • MARATHONS: MARATHON MAPS ONLY (10 minute+ maps)
@@ -836,7 +832,7 @@ def help(arg=None):
 
 #    elif arg == "ppv1":
 #        embed.title = "!ppv1"
-#        embed.description = "**Description:** The first performance point system leaderboards; however, the algorithm is not public knowledge \
+#        embed.description = "The first performance point system leaderboards; however, the algorithm is not public knowledge \
 #                                              so it is just a rough guess of how it worked."
 #        embed.add_field(name="Global parameters", value="""```ahk
 #-l: specify how many results to output. Beware the 4000 character limit
@@ -846,7 +842,7 @@ def help(arg=None):
 
 #    elif arg == "ppv1_unstable":
 #        embed.title = "!ppv1_unstable"
-#        embed.description = "**Description:** The first performance point system leaderboards; however, the algorithm is not public knowledge \
+#        embed.description = "The first performance point system leaderboards; however, the algorithm is not public knowledge \
 #                                              so it is just a rough guess of how it worked and pp values are not inflated."
 #        embed.add_field(name="Global parameters", value="""```ahk
 #-l: specify how many results to output. Beware the 4000 character limit
@@ -857,7 +853,7 @@ def help(arg=None):
 
     elif arg == "totalpp":
         embed.title = "!totalpp"
-        embed.description = "**Description:** PP Leaderboard if PP wasn't weighted."
+        embed.description = "PP Leaderboard if PP wasn't weighted."
         embed.add_field(name="Required parameters", value="""```ahk
 -filter: Specify a year (use full for every year)
 ```""",inline=False)
@@ -1020,8 +1016,8 @@ def help(arg=None):
         embed.description = "Returns statistics of a set of beatmaps"
         embed.add_field(name="Command parameters", value="""```ahk
 -o: Operation to perform. Defaults to count of every beatmap
-        • count: Returns the amount of beatmaps that fit the criteria
-        • length: Returns the total length of beatmaps that fit the criteria
+        • count: Returns the amount of beatmaps fitting the criteria
+        • length: Returns the total length of beatmaps fitting the criteria
 -mode: 0 = standard, 1 = taiko, 2 = ctb, 3 = mania. Defaults to 0
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
@@ -1032,7 +1028,7 @@ def help(arg=None):
 -year: specify a year
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
--length-min, -length-max
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
 -tags: queue a subset of maps with given tags
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
@@ -1279,7 +1275,7 @@ def help(arg=None):
 
     elif arg == "weekly":
         embed.title = "!weekly"
-        embed.description = " Returns a leaderboard for one week in project 2021."
+        embed.description = "Returns a leaderboard for one week in project 2021."
         embed.add_field(name="Command parameters", value="""```ahk
 -o: Leaderboard type. ss, fc, clears, plays, score
 -w: The week to output. Defaults to this week
@@ -1299,7 +1295,7 @@ def help(arg=None):
 
     elif arg == "fc_count":
         embed.title = "!fc_count"
-        embed.description = "**Description:** Total FC counts for users"
+        embed.description = "Total FC counts for users"
         embed.add_field(name="Required parameters", value="""```ahk
 -filter: Specify a year (use full for every year)
 ```""",inline=False)
@@ -1349,7 +1345,7 @@ def help(arg=None):
 
     elif arg == "oldestnumberone":
         embed.title = "!oldestnumberone"
-        embed.description = "**Description:** oldest number ones <user ID> | <beatmap ID>"
+        embed.description = "oldest number ones <user ID> | <beatmap ID>"
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
@@ -1357,7 +1353,7 @@ def help(arg=None):
 
     elif arg == "top1s":
         embed.title = "!top1s"
-        embed.description = "**Description:** Global #1 leaderboards"
+        embed.description = "Global #1 leaderboards"
         embed.add_field(name="Required parameters", value="""```ahk
 -filter: Specify a year (use full for every year)
 ```""",inline=False)
@@ -1369,7 +1365,7 @@ def help(arg=None):
 
     elif arg == "top50s":
         embed.title = "!top50s"
-        embed.description = "**Description:** Top 50 global leaderboards."
+        embed.description = "Top 50 global leaderboards."
         embed.add_field(name="Required parameters", value="""```ahk
 -filter: Specify a year (use full for every year)
 ```""",inline=False)
@@ -1383,7 +1379,7 @@ def help(arg=None):
 
     elif arg == "mapsranked":
         embed.title = "!mapsranked"
-        embed.description = "**Description:** Returns a leaderboard for the most difficulties ranked by a mapper."
+        embed.description = "Returns a leaderboard for the most difficulties ranked by a mapper."
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
@@ -1392,7 +1388,7 @@ def help(arg=None):
 
     elif arg == "setsranked":
         embed.title = "!setsranked"
-        embed.description = "**Description:** Returns a leaderboard for the most sets ranked by a mapper."
+        embed.description = "Returns a leaderboard for the most sets ranked by a mapper."
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
@@ -1403,7 +1399,7 @@ def help(arg=None):
 
     elif arg == "generatecollection":
         embed.title = "!generatecollection"
-        embed.description = "**Description:** Uses the specified filters to create an osu collection. Best imported using collection manager."
+        embed.description = "Uses the specified filters to create an osu collection. Best imported using collection manager."
         embed.add_field(name="Command parameters", value="""```ahk
 -o: External information to include to the dataset (neverbeenssed, neverbeenfced, status, mods)
 -status: used in conjunction with -o status or -o mods, allows for the same filtering as !getscores
@@ -1435,7 +1431,7 @@ def help(arg=None):
 
     elif arg == "generateosdb":
         embed.title = "!generateosdb"
-        embed.description = "**Description:** Uses the specified filters to create an osu collection. Best imported using collection manager."
+        embed.description = "Uses the specified filters to create an osu collection. Best imported using collection manager."
         embed.add_field(name="Command parameters", value="""```ahk
 -o: External information to include to the dataset (neverbeenssed, neverbeenfced, status, mods)
 -status: used in conjunction with -o status or -o mods, allows for the same filtering as !getscores
@@ -1467,14 +1463,14 @@ def help(arg=None):
 
     elif arg == "getfile":
         embed.title = "!getfile"
-        embed.description = "**Description:** Returns the entire list in a file, if discord allows it."
+        embed.description = "Returns the entire list in a file, if discord allows it."
         embed.add_field(name="Command parameters", value="""```ahk
 -type: List to fetch. neverbeenssed, neverbeenfced
 ```""",inline=False)
 
     elif arg == "register":
         embed.title = "!register"
-        embed.description = "**Description:** Registers a player for more frequent updates"
+        embed.description = "Registers a player for more frequent updates"
         embed.add_field(name="Required parameter", value="""```ahk
 Username or user id if username does not work
 ```""",inline=False)
@@ -1486,7 +1482,7 @@ Username or user id if username does not work
 
     elif arg == "help":
         embed.title = "!help"
-        embed.description = "**Description:** Command for seeing every command"
+        embed.description = "Command for seeing every command"
         embed.add_field(name="Command parameter", value="""```ahk
 See !help for list of commands
 ```""",inline=False)
