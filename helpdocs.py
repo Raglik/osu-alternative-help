@@ -140,6 +140,7 @@ def help(arg=None):
 -filter: specify a year or a difficulty range if applicable
 -country: specify a country using the ISO 2 letter code
 -unplayed: true/false
+-tragedy: 100, 50, x, miss
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
@@ -659,6 +660,7 @@ def help(arg=None):
 -end: latest rank date of maps to include
 -year: specify a year
 -unplayed: true/false
+-tragedy: 100, 50, x, miss
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
@@ -724,6 +726,7 @@ def help(arg=None):
 -year: specify a year
 -country: specify a country using the ISO 2 letter code
 -registered: true/false
+-tragedy: 100, 50, x, miss
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
@@ -793,7 +796,7 @@ def help(arg=None):
     elif arg == "uploadscores":
         embed.title = "!uploadscores"
         embed.description = "**Description:** Upload a .csv file from the [score fetcher](https://github.com/respektive/osu-score-fetcher-cli) which will import the scores into the database. \
-                                              Attach the .csv with the command, if it works should display a sending message. To check the queue time, use !uploadqueue."
+                                              Attach the .csv with the command, if it works should display a sending message. To check the queue time, use !uploadqueue. However, use this instead: https://osualt.respektive.pw/"
         embed.add_field(name="Command parameters", value="""**```diff
 - NONE
 ```**""",inline=False)
