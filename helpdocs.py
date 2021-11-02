@@ -48,7 +48,6 @@ def help(arg=None):
 `query`
 `queue`
 `scorequeue`
-`uploadscores`
 """,inline = True)
         embed.add_field(name = "PP:", value = """
 `fcpp`
@@ -788,18 +787,6 @@ def help(arg=None):
         embed.add_field(name="Example", value="""```ahk
 !scorequeue -u Kilgar -b 75
 ```""",inline=False)
-
-    elif arg == "uploadqueue":
-        embed.title = "!uploadqueue"
-        embed.description = "**Description:** Checks how long the !uploadscores queue will take."
-
-    elif arg == "uploadscores":
-        embed.title = "!uploadscores"
-        embed.description = "**Description:** Upload a .csv file from the [score fetcher](https://github.com/respektive/osu-score-fetcher-cli) which will import the scores into the database. \
-                                              Attach the .csv with the command, if it works should display a sending message. To check the queue time, use !uploadqueue. However, use this instead: https://osualt.respektive.pw/"
-        embed.add_field(name="Command parameters", value="""**```diff
-- NONE
-```**""",inline=False)
 
 #PP commands
     elif arg == "fcpp":
