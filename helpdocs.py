@@ -51,10 +51,10 @@ def help(arg=None):
 `uploadscores`
 """,inline = True)
         embed.add_field(name = "PP:", value = """
+`fcpp`
 `pp`
 `pp_fun`
 `totalpp`
-`fcpp`
 """,inline = True)
 # add back to the field when they work again        
 #`ppv1`
@@ -786,6 +786,18 @@ def help(arg=None):
 ```**""",inline=False)
 
 #PP commands
+    elif arg == "fcpp":
+        embed.title = "!fcpp"
+        embed.description = "Weighing pp plays based on how many FCs there are, how popular the map is, and how hard the map is and ignoring mods"
+        embed.add_field(name="Optional parameters", value="""```ahk
+-country: specify a country using the ISO 2 letter code
+-filter: specify a year or a difficulty range if applicable
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 4000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
 
     elif arg == "pp":
         embed.title = "!pp"
@@ -1475,7 +1487,7 @@ See !help for list of commands
         embed.title = "no"
 
     elif arg == "!!":
-        embed.title = "!skillissue"
+        embed.title = "!!"
         
     elif arg == "abababa":
         embed.color=0xc85050 
