@@ -147,6 +147,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
 
 #Global Stats commands
@@ -431,6 +432,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -457,6 +459,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -487,6 +490,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -517,6 +521,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -543,6 +548,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -568,6 +574,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -593,6 +600,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -619,6 +627,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -657,6 +666,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -666,7 +676,7 @@ def help(arg=None):
 
     elif arg == "missingscore":
         embed.title = "!missingscore"
-        embed.description = "**Description:**Returns an ordered list of plays based on how much score you're msising compared to the #1 play on the map."
+        embed.description = "**Description:** Returns an ordered list of plays based on how much score you're msising compared to the #1 play on the map."
         embed.add_field(name="Command parameters", value="""```ahk
 -o: nomodscore
 ```""",inline=False)
@@ -689,6 +699,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -720,6 +731,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -750,6 +762,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -u: specify a user (For a space in the username, use "+")
@@ -884,6 +897,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -909,6 +923,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -934,6 +949,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -974,6 +990,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -998,6 +1015,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -1029,6 +1047,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
 
     elif arg == "beatmaplist":
@@ -1052,6 +1071,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -1080,6 +1100,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
 
     elif arg == "maxscore":
@@ -1106,6 +1127,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
 
     elif arg == "nomodcore":
@@ -1132,6 +1154,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
 
     elif arg == "worst_acc":
@@ -1412,6 +1435,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -1443,6 +1467,7 @@ def help(arg=None):
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
 -artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
