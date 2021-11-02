@@ -700,7 +700,7 @@ def help(arg=None):
         embed.title = "!query"
         embed.description = "**Description:** Allows for precise star rating filtering on typical leaderboards for registered users"
         embed.add_field(name="Command parameters", value="""```ahk
--o: score, completion
+-o: score, completion, pp
 -status: sliderbreak
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
@@ -712,7 +712,6 @@ def help(arg=None):
 -end: latest rank date of maps to include
 -year: specify a year
 -country: specify a country using the ISO 2 letter code
--unplayed: true/false
 -registered: true/false
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
