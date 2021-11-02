@@ -45,6 +45,7 @@ def help(arg=None):
 """,inline = True)        
         embed.add_field(name = "Advanced:", value = """
 `getscores`
+`missingscore`
 `query`
 `queue`
 `scorequeue`
@@ -54,6 +55,7 @@ def help(arg=None):
 `pp`
 `pp_fun`
 `totalpp`
+`fcpp`
 """,inline = True)
 # add back to the field when they work again        
 #`ppv1`
@@ -94,10 +96,12 @@ def help(arg=None):
 # """,inline = True)        
         embed.add_field(name = "Other Stats:", value = """
 `fc_count`
+`followers`
+`most_medals`
 `oldestnumberone`
+`replayswatched`
 `top1s`
 `top50s`
-`most_medals`
 """,inline = True)            
         embed.add_field(name = "Mapper:", value = """
 `mapsranked`
