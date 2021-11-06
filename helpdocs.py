@@ -132,6 +132,8 @@ def help(arg=None):
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
+-pp-min: minimal pp to include (inclusive)
+-pp-max: maximal pp to include (exclusive)
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -655,6 +657,8 @@ def help(arg=None):
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
+-pp-min: minimal pp to include (inclusive)
+-pp-max: maximal pp to include (exclusive)
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -720,6 +724,8 @@ def help(arg=None):
 -is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
+-pp-min: minimal pp to include (inclusive)
+-pp-max: maximal pp to include (exclusive)
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
