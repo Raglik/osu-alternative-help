@@ -37,6 +37,7 @@ def help(arg=None):
 `first_ss_list`
 `least_fced`
 `least_ssed`
+`neverbeendted`
 `neverbeenfced`
 `neverbeenssed`
 `unique_fc_list`
@@ -504,8 +505,8 @@ def help(arg=None):
         embed.title = "!least_ssed"
         embed.description = "Returns a list of beatmaps ordered by their SS count (starts at 0)."
         embed.add_field(name="Command parameters", value="""```ahk
--ss-min: minimum amount of FC count  
--ss-max: maximum amount of FC count
+-ss-min: minimum amount of SS count  
+-ss-max: maximum amount of SS count
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
 -order: score, length, approved_date, accuracy, ar, od etc.
@@ -531,9 +532,9 @@ def help(arg=None):
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
 
-    elif arg == "neverbeenssed":
-        embed.title = "!neverbeenssed"
-        embed.description = "Returns a list of maps that have never been SSed that are at least 30 days old."
+    elif arg == "neverbeendted":
+        embed.title = "!neverbeendted"
+        embed.description = "Returns a list of maps that have never been DTed that are at least 30 days old."
         embed.add_field(name="Optional parameters", value="""```ahk
 -order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
@@ -560,6 +561,32 @@ def help(arg=None):
     elif arg == "neverbeenfced":
         embed.title = "!neverbeenfced"
         embed.description = "Returns a list of maps that have never been FCed that are at least 7 days old."
+        embed.add_field(name="Optional parameters", value="""```ahk
+-order: score, length, approved_date, accuracy, ar, od etc.
+-direction: desc, asc
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+-time: minimum interval between rank date and play date
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 4000 character limit
+-p: specify the resulting page to output
+```""",inline=False)
+
+    elif arg == "neverbeenssed":
+        embed.title = "!neverbeenssed"
+        embed.description = "Returns a list of maps that have never been SSed that are at least 30 days old."
         embed.add_field(name="Optional parameters", value="""```ahk
 -order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
@@ -716,7 +743,7 @@ def help(arg=None):
         embed.title = "!query"
         embed.description = "Allows for precise star rating filtering on typical leaderboards for registered users"
         embed.add_field(name="Command parameters", value="""```ahk
--o: score, completion, pp
+-o: score, completion, pp, totalpp
 -status: sliderbreak
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
