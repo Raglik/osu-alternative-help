@@ -534,7 +534,7 @@ def help(arg=None):
 
     elif arg == "neverbeendted":
         embed.title = "!neverbeendted"
-        embed.description = "Returns a list of maps that have never been DTed that are at least 30 days old."
+        embed.description = "Returns a list of maps that have never been DTed."
         embed.add_field(name="Optional parameters", value="""```ahk
 -order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
