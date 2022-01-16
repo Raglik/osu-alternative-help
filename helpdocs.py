@@ -1,8 +1,9 @@
 import discord
-arg = arg.lower();
+
 
 def help(arg=None):
     embed = discord.Embed(colour=0xcc5288)
+    arg = arg.lower();
 #Default Help page
     if arg == None:
         embed.title = "Help"
