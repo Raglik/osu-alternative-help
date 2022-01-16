@@ -818,7 +818,7 @@ Project commands (move to one command showing all of these later.)
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
         embed.add_field(name="Example", value="""```ahk
-!queue -u Kilgar -is_fc true -min 1 -max 2 -tags %dnb%liquicity% -mapper strategas -artist mage -year 2021 -length-max 300 -start 2021-01-01 -end 2022-01-01 -unplayed yes
+!queue -u Kilgar -is_fc true -min 1 -max 2 -tags %dnb%liquicity% -mapper strategas -artist mage -year 2021 -length-max 300 -start 2021-01-01 -end 2022-01-01 -unplayed true
 ```""",inline=False)
 
     elif arg == "queuelength":
