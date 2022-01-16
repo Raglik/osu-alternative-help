@@ -78,9 +78,8 @@ def help(arg=None):
 `nomodscore`
 `toprated`
 `worst_acc`
-""",inline = True) 
-Project commands (move to one command showing all of these later.)      
-#         embed.add_field(name = "Project Beatmaps:", value = """
+""",inline = True)     
+#        embed.add_field(name = "Project Beatmaps:", value = """
 # `projectdemetori`
 # `projectdragonforce`
 # `projecthitogata`
@@ -88,7 +87,7 @@ Project commands (move to one command showing all of these later.)
 # `projecttouhou`
 # `projectXYZ`
 # """,inline = True)        
-        embed.add_field(name = "Project 2021:", value = """
+        embed.add_field(name = "Project 2022:", value = """
 `firstmap`
 `update`
 `weekly`
