@@ -1541,5 +1541,9 @@ See !help for list of commands
     elif arg == "abababa":
         embed.color=0xc85050 
         embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/653927651618193428.gif?size=96")
+
+elif arg == "kilgar":
+        embed.color=0xc85050 
+        embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/931703750983299072.webp?size=96&quality=lossless")
 #return the generated embed to bot
     return embed
