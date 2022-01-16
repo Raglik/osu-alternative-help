@@ -163,6 +163,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -176,6 +177,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -189,6 +191,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -202,6 +205,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -214,6 +218,7 @@ def help(arg=None):
         embed.description = "playcount leaderboard"
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -226,6 +231,7 @@ def help(arg=None):
         embed.description = "playtime leaderboard"
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -239,6 +245,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -252,6 +259,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -264,6 +272,7 @@ def help(arg=None):
         embed.description = "Total hits leaderboard"
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code  
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit  
@@ -277,6 +286,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -290,6 +300,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -760,6 +771,7 @@ def help(arg=None):
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
+-direction: desc, asc
 -country: specify a country using the ISO 2 letter code
 -registered: true/false
 -tragedy: 100, 50, x, miss
@@ -841,6 +853,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -filter: specify a year or a difficulty range if applicable
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -1362,6 +1375,7 @@ def help(arg=None):
 -country: specify a country using the ISO 2 letter code
 -playcount-min: minimum amount of playcount to include (inclusive)
 -playcount-max: maximum amount of playcount to include (exclusive)
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -1543,7 +1557,7 @@ See !help for list of commands
         embed.color=0xc85050 
         embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/653927651618193428.gif?size=96")
 
-elif arg == "kilgar":
+    elif arg == "kilgar":
         embed.color=0xc85050 
         embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/931703750983299072.webp?size=96&quality=lossless")
 #return the generated embed to bot
