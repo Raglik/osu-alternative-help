@@ -1603,6 +1603,6 @@ def save(arg=None):
         arg = arg.lower();
     if arg == "None":
         embed.title = "who"
-    else
+    else:
         embed.title = "no"
     return embed
