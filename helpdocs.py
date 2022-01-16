@@ -1,4 +1,5 @@
 import discord
+arg = arg.lower();
 
 def help(arg=None):
     embed = discord.Embed(colour=0xcc5288)
@@ -753,6 +754,8 @@ def help(arg=None):
 -max: maximal star rating of maps to include (exclusive)
 -pp-min: minimal pp to include (inclusive)
 -pp-max: maximal pp to include (exclusive)
+-playcount-min: minimum amount of playcount to include (inclusive)
+-playcount-max: maximum amount of playcount to include (exclusive)
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -1356,6 +1359,8 @@ def help(arg=None):
         embed.description = "Hitsperplay leaderboard"
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
+-playcount-min: minimum amount of playcount to include (inclusive)
+-playcount-max: maximum amount of playcount to include (exclusive)
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
