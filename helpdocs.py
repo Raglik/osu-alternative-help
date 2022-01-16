@@ -1433,6 +1433,9 @@ def help(arg=None):
     elif arg == "mapsranked":
         embed.title = "!mapsranked"
         embed.description = "Returns a leaderboard for the most difficulties ranked by a mapper."
+        embed.add_field(name="Optional parameters", value="""```ahk
+-direction: desc, asc
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
@@ -1442,6 +1445,9 @@ def help(arg=None):
     elif arg == "setsranked":
         embed.title = "!setsranked"
         embed.description = "Returns a leaderboard for the most sets ranked by a mapper."
+        embed.add_field(name="Optional parameters", value="""```ahk
+-direction: desc, asc
+```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
 -p: specify the resulting page to output
