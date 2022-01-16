@@ -1596,3 +1596,13 @@ See !help for list of commands
         embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/931703750983299072.webp?size=96&quality=lossless")
 #return the generated embed to bot
     return embed
+
+def save(arg=None):
+    embed = discord.Embed(colour=0xcc5288)
+    if arg != None:
+        arg = arg.lower();
+    if arg == "None":
+        embed.title = "who"
+    else
+        embed.title = "no"
+    return embed
