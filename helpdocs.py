@@ -79,7 +79,7 @@ def help(arg=None):
 `toprated`
 `worst_acc`
 """,inline = True) 
-# Project commands (move to one command showing all of these later.)      
+Project commands (move to one command showing all of these later.)      
 #         embed.add_field(name = "Project Beatmaps:", value = """
 # `projectdemetori`
 # `projectdragonforce`
@@ -88,13 +88,12 @@ def help(arg=None):
 # `projecttouhou`
 # `projectXYZ`
 # """,inline = True)        
-#         embed.add_field(name = "Project 2021:", value = """
-# `firstmap`
-# `stats`
-# `update`
-# `weekly`
-# `yeartodate`
-# """,inline = True)        
+        embed.add_field(name = "Project 2021:", value = """
+`firstmap`
+`update`
+`weekly`
+`yeartodate`
+""",inline = True)        
         embed.add_field(name = "Other Stats:", value = """
 `fc_count`
 `followers`
@@ -921,11 +920,13 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
+-direction: desc, asc
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
 -country: Specify a country using the ISO 2 letter code
 -time: minimum interval between rank date and play date
+
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
@@ -947,6 +948,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
+-direction: desc, asc
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -973,6 +975,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
+-direction: desc, asc
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -1015,6 +1018,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
+-direction: desc, asc
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -1040,6 +1044,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
+-direction: desc, asc
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -1153,6 +1158,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
+-direction: desc, asc
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -1199,6 +1205,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
+-direction: desc, asc
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -1311,21 +1318,13 @@ def help(arg=None):
 -w: The week to output. Defaults to this week
 ```""",inline=False)
 
-    elif arg == "stats":
-        embed.title = "!stats"
-        embed.description = "Returns one user's ranking for each week in project 2021."
-        embed.add_field(name="Command parameters", value="""```ahk
--o: Leaderboard type. ss, fc, clears, plays, score
--u: User to lookup (optional)
-```""",inline=False)
-
     elif arg == "update":
         embed.title = "!update"
-        embed.description = "Refresh bot output for Project 2021 commands."
+        embed.description = "Refresh bot output for Project 2022 commands."
 
     elif arg == "weekly":
         embed.title = "!weekly"
-        embed.description = "Returns a leaderboard for one week in project 2021."
+        embed.description = "Returns a leaderboard for one week in project 2022."
         embed.add_field(name="Command parameters", value="""```ahk
 -o: Leaderboard type. ss, fc, clears, plays, score
 -w: The week to output. Defaults to this week
@@ -1334,7 +1333,7 @@ def help(arg=None):
 
     elif arg == "yeartodate":
         embed.title = "!yeartodate"
-        embed.description = "Returns a leaderboard for the entirety of project 2021."
+        embed.description = "Returns a leaderboard for the entirety of project 2022."
         embed.add_field(name="Command parameters", value="""```ahk
 -o: Leaderboard type. fc, clears, plays, score, ss, s, silver_s, gold_s, etc
 -u: User to lookup (optional)
@@ -1361,6 +1360,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -rankedscore: min. score for a user to be on the board
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -1389,6 +1389,7 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -country: specify a country using the ISO 2 letter code
 -rankedscore: min. score for a user to be on the board
+-direction: desc, asc
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
