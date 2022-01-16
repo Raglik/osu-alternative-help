@@ -1,5 +1,5 @@
 import discord
-arg = arg.lower();
+arg = arg.lower()
 
 def help(arg=None):
     embed = discord.Embed(colour=0xcc5288)
