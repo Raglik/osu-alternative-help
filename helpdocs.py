@@ -1594,5 +1594,8 @@ See !help for list of commands
     elif arg == "kilgar":
         embed.color=0xc85050 
         embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/931703750983299072.webp?size=96&quality=lossless")
+    elif arg == "respektive":
+        embed.color=0xc85050
+        embed.set_thumbnail(url="https://discord.com/assets/19fc9fc6001951c7370b1fd74e1570f1.svg")
 #return the generated embed to bot
     return embed
