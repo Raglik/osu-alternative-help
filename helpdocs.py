@@ -1226,9 +1226,9 @@ def help(arg=None):
 
     elif arg == "projectdemetori":
         embed.title = "!projectdemetori"
-        embed.description = "Leaderboard for maps tagged with Demetori."
+        embed.description = "Shortcut to !query for maps tagged with Demetori."
         embed.add_field(name="Command parameters", value="""```ahk
--o: ss, fc, clears, score
+See !help query for all parameters
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -1238,9 +1238,9 @@ def help(arg=None):
 
     elif arg == "projectdragonforce":
         embed.title = "!projectdragonforce"
-        embed.description = "Leaderboard for maps tagged with Dragonforce."
+        embed.description = "Shortcut to !query for maps tagged with Dragonforce."
         embed.add_field(name="Command parameters", value="""```ahk
--o: ss, fc, clears, score
+See !help query for all parameters
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -1250,13 +1250,13 @@ def help(arg=None):
 
     elif arg == "projecthitogata":
         embed.title = "!projecthitogata"
-        embed.description = "Leaderboard for the 50 diff mapset known as Hitogata sung by HIMEHINA and hosted by Ryuusei Aika featuring 49 different mappers excluding Ryuusei \
+        embed.description = "Shortcut to !query for the 50 diff mapset known as Hitogata sung by HIMEHINA and hosted by Ryuusei Aika featuring 49 different mappers excluding Ryuusei \
                              including: bossandy, -Nanako-, Niva, Firika, deetz, Narcissu, lv9, Beomsan, Present, Starfy, papple104, - Frontier -, semaphore, Lami, Trynna, \
                              Ujimatcha, rui, Frey, jonathanlfj, LMT, -ClariS-, appleeaterx, tomadoi, -Nanaka-, AIR, z1085684963, CoLouRed GlaZeE, ScubDomino, Silky, moph, \
                              Necho, Kalibe, Shizuku-, kanor, Len, irotuk, contagious, melloe, Bariton, xLolicore-, Regou, Luscent, Yusomi, Jounzan, Yugu, ak74, val0108, \
                              -[Pino]- and Taeyang."
         embed.add_field(name="Command parameters", value="""```ahk
--o: ss, fc, clears, score
+See !help query for all parameters
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -1266,9 +1266,9 @@ def help(arg=None):
 
     elif arg == "projectsao":
         embed.title = "!projectsao"
-        embed.description = "Leaderboard for maps tagged with the hit anime sensation Sword Art Online."
+        embed.description = "Shortcut to !query for maps tagged with the hit anime sensation Sword Art Online."
         embed.add_field(name="Command parameters", value="""```ahk
--o: ss, fc, clears, score
+See !help query for all parameters
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -1278,9 +1278,9 @@ def help(arg=None):
 
     elif arg == "projecttouhou":
         embed.title = "!projecttouhou"
-        embed.description = "Leaderboard for maps tagged with touhou."
+        embed.description = "Shortcut to !query for maps tagged with touhou."
         embed.add_field(name="Command parameters", value="""```ahk
--o: ss, fc, clears, score
+See !help query for all parameters
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
@@ -1303,9 +1303,9 @@ def help(arg=None):
 
     elif arg == "projectdemetori":
         embed.title = "!projectdemetori"
-        embed.description = "Leaderboard for maps tagged with demetori."
+        embed.description = "Shortcut to !query for maps tagged with demetori."
         embed.add_field(name="Command parameters", value="""```ahk
--o: ss, fc, clears, score
+See !help query for all parameters
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
