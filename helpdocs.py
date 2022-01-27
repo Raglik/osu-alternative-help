@@ -98,6 +98,8 @@ def help(arg=None):
 `followers`
 `hitsperplay`
 `most_medals`
+`nomodnumberones`
+`numberones`
 `oldestnumberone`
 `replayswatched`
 `top1s`
@@ -127,7 +129,8 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -o: leaderboard option in multi-purpose commands
 -letter: X XH SH S A B C D
--is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
+-is_ss,-isnot_fc,-is_ht,-is_dt,-isnot_hr and etc. : true/false
+-mods: ht, nfso, dthrfl, hd, ezhtnfhdfl, etc.
 -replay: true/false
 -order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
@@ -689,7 +692,8 @@ def help(arg=None):
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
--is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
+-is_ss,-isnot_fc,-is_ht,-is_dt,-isnot_hr and etc. : true/false
+-mods: ht, nfso, dthrfl, hd, ezhtnfhdfl, etc.
 -replay: true/false
 -order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
@@ -759,7 +763,8 @@ def help(arg=None):
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
--is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
+-is_ss,-isnot_fc,-is_ht,-is_dt,-isnot_hr and etc. : true/false
+-mods: ht, nfso, dthrfl, hd, ezhtnfhdfl, etc.
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
 -pp-min: minimal pp to include (inclusive)
@@ -1325,18 +1330,63 @@ def help(arg=None):
         embed.title = "!weekly"
         embed.description = "Returns a leaderboard for one week in project 2022."
         embed.add_field(name="Command parameters", value="""```ahk
--o: Leaderboard type. ss, fc, clears, plays, score
 -w: The week to output. Defaults to this week
--u: User to lookup (optional)
+```""",inline=False)
+        embed.add_field(name="Optional parameters", value="""```ahk
+-o: ss, fc, clears, plays, score
+-letter: X XH SH S A B C D
+-is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-pp-min: minimal pp to include (inclusive)
+-pp-max: maximal pp to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-country: specify a country using the ISO 2 letter code
+-tragedy: 100, 50, x, miss
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 4000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
 
     elif arg == "yeartodate":
         embed.title = "!yeartodate"
         embed.description = "Returns a leaderboard for the entirety of project 2022."
-        embed.add_field(name="Command parameters", value="""```ahk
--o: Leaderboard type. fc, clears, plays, score, ss, s, silver_s, gold_s, etc
--u: User to lookup (optional)
--o: Beatmap difficulty filter. easy, normal, hard, insane, extra, extreme
+        embed.add_field(name="Optional parameters", value="""```ahk
+-o: ss, fc, clears, plays, score
+-letter: X XH SH S A B C D
+-is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-pp-min: minimal pp to include (inclusive)
+-pp-max: maximal pp to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-country: specify a country using the ISO 2 letter code
+-tragedy: 100, 50, x, miss
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 4000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
 
 #Other stats command
@@ -1389,6 +1439,58 @@ def help(arg=None):
 -country: specify a country using the ISO 2 letter code
 -rankedscore: min. score for a user to be on the board
 -direction: desc, asc
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 4000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "nomodnumberones":
+        embed.title = "!nomodnumberones"
+        embed.description = "Nomod number ones"
+        embed.add_field(name="Optional parameters", value="""```ahk
+-order: length, approved_date, ar, od etc.
+-direction: desc, asc
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 4000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "numberones":
+        embed.title = "!numberones"
+        embed.description = "Global number ones"
+        embed.add_field(name="Optional parameters", value="""```ahk
+-order: length, approved_date, ar, od etc.
+-direction: desc, asc
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
