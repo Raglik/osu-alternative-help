@@ -799,7 +799,7 @@ def help(arg=None):
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
         embed.add_field(name="Example", value="""```ahk
-!query -u RonaldMcDonald -is_ss true -letter X -max 5 -start 2015-01-01 -end 2016-01-01 -ar-max 10 -tags %reol% -title no_title -mapper vinxis -year 2015
+!query -u respektive -is_ss true -letter X -max 5 -start 2015-01-01 -end 2016-01-01 -ar-max 10 -tags %reol% -title no_title -mapper vinxis -year 2015
 ```""",inline=False)
 
     elif arg == "queue":
