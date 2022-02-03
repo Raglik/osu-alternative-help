@@ -100,7 +100,6 @@ def help(arg=None):
 `most_medals`
 `nomodnumberones`
 `numberones`
-`oldestnumberone`
 `replayswatched`
 `top1s`
 `top50s`
@@ -1504,13 +1503,13 @@ See !help query for all parameters
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
 
-    elif arg == "oldestnumberone":
-        embed.title = "!oldestnumberone"
-        embed.description = "oldest number ones <user ID> | <beatmap ID>"
-        embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 4000 character limit
--p: specify the resulting page to output
-```""",inline=False)
+#    elif arg == "oldestnumberone":
+#        embed.title = "!oldestnumberone"
+#        embed.description = "oldest number ones <user ID> | <beatmap ID>"
+#        embed.add_field(name="Global parameters", value="""```ahk
+#-l: specify how many results to output. Beware the 4000 character limit
+#-p: specify the resulting page to output
+#```""",inline=False)
 
     elif arg == "top1s":
         embed.title = "!top1s"
