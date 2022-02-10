@@ -100,7 +100,6 @@ def help(arg=None):
 `most_medals`
 `nomodnumberones`
 `numberones`
-`oldestnumberone`
 `replayswatched`
 `top1s`
 `top50s`
@@ -130,6 +129,9 @@ def help(arg=None):
 -o: leaderboard option in multi-purpose commands
 -letter: X XH SH S A B C D
 -is_ss,-isnot_fc,-is_ht,-is_dt,-isnot_hr and etc. : true/false
+-is_ss, -is_ht, -is_dt, etc. : true/false
+-is: hd, hdhrdt, etc. short for -is_mod true
+-isnot: hd, hdhrdt, etc. short for -is_mod false
 -mods: ht, nfso, dthrfl, hd, ezhtnfhdfl, etc.
 -replay: true/false
 -order: score, length, approved_date, accuracy, ar, od etc.
@@ -694,6 +696,9 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
 -is_ss,-isnot_fc,-is_ht,-is_dt,-isnot_hr and etc. : true/false
+-is_ss, -is_ht, -is_dt, etc. : true/false
+-is: hd, hdhrdt, etc. short for -is_mod true
+-isnot: hd, hdhrdt, etc. short for -is_mod false
 -mods: ht, nfso, dthrfl, hd, ezhtnfhdfl, etc.
 -replay: true/false
 -order: score, length, approved_date, accuracy, ar, od etc.
@@ -705,8 +710,9 @@ def help(arg=None):
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
--unplayed: true/false
+-unplayed: true
 -tragedy: 100, 50, x, miss
+-score: minimum score to include (inclusive)
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
@@ -765,6 +771,9 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
 -is_ss,-isnot_fc,-is_ht,-is_dt,-isnot_hr and etc. : true/false
+-is_ss, -is_ht, -is_dt, etc. : true/false
+-is: hd, hdhrdt, etc. short for -is_mod true
+-isnot: hd, hdhrdt, etc. short for -is_mod false
 -mods: ht, nfso, dthrfl, hd, ezhtnfhdfl, etc.
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -777,9 +786,9 @@ def help(arg=None):
 -year: specify a year
 -direction: desc, asc
 -country: specify a country using the ISO 2 letter code
--registered: true/false
+-registered: false
 -tragedy: 100, 50, x, miss
--score: minimum score to include
+-score: minimum score to include (inclusive)
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
@@ -795,7 +804,7 @@ def help(arg=None):
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
         embed.add_field(name="Example", value="""```ahk
-!query -u RonaldMcDonald -is_ss true -letter X -max 5 -start 2015-01-01 -end 2016-01-01 -ar-max 10 -tags %reol% -title no_title -mapper vinxis -year 2015
+!query -u respektive -is_ss true -letter X -max 5 -start 2015-01-01 -end 2016-01-01 -ar-max 10 -tags %reol% -title no_title -mapper vinxis -year 2015
 ```""",inline=False)
 
     elif arg == "queue":
@@ -1500,14 +1509,6 @@ See !help query for all parameters
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
 
-    elif arg == "oldestnumberone":
-        embed.title = "!oldestnumberone"
-        embed.description = "oldest number ones <user ID> | <beatmap ID>"
-        embed.add_field(name="Global parameters", value="""```ahk
--l: specify how many results to output. Beware the 4000 character limit
--p: specify the resulting page to output
-```""",inline=False)
-
     elif arg == "top1s":
         embed.title = "!top1s"
         embed.description = "Global #1 leaderboards"
@@ -1604,7 +1605,8 @@ See !help query for all parameters
 -end: latest rank date of maps to include
 -year: specify a year
 -rank: number of rank #
--unplayed: true/false
+-unplayed: true
+-score: minimum score to include (inclusive)
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
@@ -1636,7 +1638,8 @@ See !help query for all parameters
 -end: latest rank date of maps to include
 -year: specify a year
 -rank: number of rank #
--unplayed: true/false
+-unplayed: true
+-score: minimum score to include (inclusive)
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
@@ -1655,8 +1658,11 @@ See !help query for all parameters
     elif arg == "getfile":
         embed.title = "!getfile"
         embed.description = "Returns the entire list in a file, if discord allows it."
+        embed.description = "Returns a csv file of the specified type, if discord allows it."
         embed.add_field(name="Command parameters", value="""```ahk
 -type: List to fetch. neverbeenssed, neverbeenfced
+-type: List to fetch. neverbeenssed, neverbeenfced, scores
+-u: user for scores
 ```""",inline=False)
 
     elif arg == "register":
