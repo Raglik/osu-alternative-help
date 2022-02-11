@@ -128,7 +128,6 @@ def help(arg=None):
         embed.add_field(name="Optional parameters", value="""```ahk
 -o: leaderboard option in multi-purpose commands
 -letter: X XH SH S A B C D
--is_ss,-isnot_fc,-is_ht,-is_dt,-isnot_hr and etc. : true/false
 -is_ss, -is_ht, -is_dt, etc. : true/false
 -is: hd, hdhrdt, etc. short for -is_mod true
 -isnot: hd, hdhrdt, etc. short for -is_mod false
@@ -695,7 +694,6 @@ def help(arg=None):
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
--is_ss,-isnot_fc,-is_ht,-is_dt,-isnot_hr and etc. : true/false
 -is_ss, -is_ht, -is_dt, etc. : true/false
 -is: hd, hdhrdt, etc. short for -is_mod true
 -isnot: hd, hdhrdt, etc. short for -is_mod false
@@ -770,7 +768,6 @@ def help(arg=None):
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH SH S A B C D
--is_ss,-isnot_fc,-is_ht,-is_dt,-isnot_hr and etc. : true/false
 -is_ss, -is_ht, -is_dt, etc. : true/false
 -is: hd, hdhrdt, etc. short for -is_mod true
 -isnot: hd, hdhrdt, etc. short for -is_mod false
