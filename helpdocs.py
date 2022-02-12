@@ -41,7 +41,15 @@ def help(arg=None):
 `nomodscore`
 `toprated`
 `worst_acc`
-""",inline = True)            
+""",inline = True)    
+        embed.add_field(name = "Custom:", value = """
+`first_fc`
+`first_ss`
+`ss_bounty`
+`tragedy`
+`unique_fc`
+`unique_ss`
+""",inline = True)         
         embed.add_field(name = "Advanced:", value = """
 `getscores`
 `missingscore`
@@ -49,6 +57,16 @@ def help(arg=None):
 `queue`
 `scorequeue`
 """,inline = True)
+        embed.add_field(name = "Other Stats:", value = """
+`followers`
+`hiddennumberones`
+`hitsperplay`
+`most_medals`
+`nomodnumberones`
+`numberones`
+`replayswatched`
+`top1s`
+""",inline = True)   
         embed.add_field(name = "Score:", value = """
 `rankedscore`
 `scorepersecond`
@@ -61,14 +79,6 @@ def help(arg=None):
 # add back to the field when they work again        
 #`ppv1`
 #`ppv1_unstable`
-        embed.add_field(name = "Custom:", value = """
-`first_fc`
-`first_ss`
-`ss_bounty`
-`tragedy`
-`unique_fc`
-`unique_ss`
-""",inline = True) 
 #        embed.add_field(name = "Project Beatmaps:", value = """
 # `projectdemetori`
 # `projectdragonforce`
@@ -81,17 +91,7 @@ def help(arg=None):
 `firstmap`
 `weekly`
 `yeartodate`
-""",inline = True)        
-        embed.add_field(name = "Other Stats:", value = """
-`followers`
-`hiddennumberones`
-`hitsperplay`
-`most_medals`
-`nomodnumberones`
-`numberones`
-`replayswatched`
-`top1s`
-""",inline = True)            
+""",inline = True)                
         embed.add_field(name = "Mapper:", value = """
 `mapsranked`
 `setsranked`
