@@ -20,20 +20,7 @@ def help(arg=None):
 `totalhits`
 `total_s`
 `total_ss`
-""",inline = True)
-        embed.add_field(name = "Score:", value = """
-`fcscore`
-`notfcscore`
-`przegranyscore`
-`rankedscore`
-`scorepersecond`
-`scoresquared`
-`scorev0`
-`ssscore`
-`totalscore`
-`weightedscore`
-`xasumascore`
-        """,inline = True)        
+""",inline = True)   
         embed.add_field(name = "Custom Beatmap Lists:", value = """
 `first_fc_list`
 `first_ss_list`
@@ -44,7 +31,17 @@ def help(arg=None):
 `neverbeenssed`
 `unique_fc_list`
 `unique_ss_list`
-""",inline = True)        
+""",inline = True)
+        embed.add_field(name = "Beatmap:", value = """
+`beatmaps`
+`beatmaplist`
+`beatmapsets`
+`maxscore`
+`most_static`
+`nomodscore`
+`toprated`
+`worst_acc`
+""",inline = True)            
         embed.add_field(name = "Advanced:", value = """
 `getscores`
 `missingscore`
@@ -52,10 +49,13 @@ def help(arg=None):
 `queue`
 `scorequeue`
 """,inline = True)
+        embed.add_field(name = "Score:", value = """
+`rankedscore`
+`scorepersecond`
+`totalscore`
+        """,inline = True)     
         embed.add_field(name = "PP:", value = """
-`fcpp`
 `pp`
-`pp_fun`
 `totalpp`
 """,inline = True)
 # add back to the field when they work again        
@@ -68,17 +68,7 @@ def help(arg=None):
 `tragedy`
 `unique_fc`
 `unique_ss`
-""",inline = True)
-        embed.add_field(name = "Beatmap:", value = """
-`beatmaps`
-`beatmaplist`
-`beatmapsets`
-`maxscore`
-`most_static`
-`nomodscore`
-`toprated`
-`worst_acc`
-""",inline = True)     
+""",inline = True) 
 #        embed.add_field(name = "Project Beatmaps:", value = """
 # `projectdemetori`
 # `projectdragonforce`
@@ -89,20 +79,18 @@ def help(arg=None):
 # """,inline = True)        
         embed.add_field(name = "Project 2022:", value = """
 `firstmap`
-`update`
 `weekly`
 `yeartodate`
 """,inline = True)        
         embed.add_field(name = "Other Stats:", value = """
-`fc_count`
 `followers`
+`hiddennumberones`
 `hitsperplay`
 `most_medals`
 `nomodnumberones`
 `numberones`
 `replayswatched`
 `top1s`
-`top50s`
 """,inline = True)            
         embed.add_field(name = "Mapper:", value = """
 `mapsranked`
