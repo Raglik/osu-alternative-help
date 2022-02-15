@@ -29,6 +29,7 @@ def help(arg=None):
 `neverbeendted`
 `neverbeenfced`
 `neverbeenssed`
+`unique_dt_fc_list`
 `unique_fc_list`
 `unique_ss_list`
 """,inline = True)
@@ -47,6 +48,7 @@ def help(arg=None):
 `first_ss`
 `ss_bounty`
 `tragedy`
+`unique_dt_fc`
 `unique_fc`
 `unique_ss`
 """,inline = True)         
@@ -125,6 +127,8 @@ def help(arg=None):
 -direction: desc, asc
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
+-acc-min: minimal acc to include (inclusive)
+-acc-max: maximal acc to include (exclusive)
 -pp-min: minimal pp to include (inclusive)
 -pp-max: maximal pp to include (exclusive)
 -start: earliest rank date of maps to include
@@ -614,6 +618,33 @@ def help(arg=None):
 -p: specify the resulting page to output
 ```""",inline=False)
 
+    elif arg == "unique_dt_fc_list":
+        embed.title = "!unique_dt_fc_list"
+        embed.description = "Generates a list of maps which only have 1 DT FC."
+        embed.add_field(name="Optional parameters", value="""```ahk
+-order: score, length, approved_date, accuracy, ar, od etc.
+-direction: desc, asc
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+-time: minimum interval between rank date and play date
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 4000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
     elif arg == "unique_fc_list":
         embed.title = "!unique_fc_list"
         embed.description = "Generates a list of maps which only have 1 FC."
@@ -762,6 +793,8 @@ def help(arg=None):
 -mods: ht, nfso, dthrfl, hd, ezhtnfhdfl, etc.
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
+-acc-min: minimal acc to include (inclusive)
+-acc-max: maximal acc to include (exclusive)
 -pp-min: minimal pp to include (inclusive)
 -pp-max: maximal pp to include (exclusive)
 -playcount-min: minimum amount of playcount to include (inclusive)
@@ -1005,6 +1038,32 @@ def help(arg=None):
 • 50: 1x50 only score for an SS
 • miss: 1 miss only score for an SS
 • x: 1 miss only score for an FC
+```""",inline=False)
+        embed.add_field(name="Global parameters", value="""```ahk
+-l: specify how many results to output. Beware the 4000 character limit
+-p: specify the resulting page to output
+-u: specify a user (For a space in the username, use "+")
+```""",inline=False)
+
+    elif arg == "unique_dt_fc":
+        embed.title = "!unique_dt_fc"
+        embed.description = "Generates a leaderboard of players who have the only DT FC on maps."
+        embed.add_field(name="Optional parameters", value="""```ahk
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-direction: desc, asc
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+-country: Specify a country using the ISO 2 letter code
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
 ```""",inline=False)
         embed.add_field(name="Global parameters", value="""```ahk
 -l: specify how many results to output. Beware the 4000 character limit
