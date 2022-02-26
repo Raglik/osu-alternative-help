@@ -709,9 +709,6 @@ def help(arg=None):
         embed.add_field(name="Command parameters", value="""```ahk
 -status: Returns the amount of beatmaps based on the specified criteria
         • sliderbreak, miss, ss
-        status in conjuction with -mods 1
-        • 1,1.06,1.12,1.19,1.25,1.33,1.41
--mods 1: Returns the amount of beatmaps based on the mod score (use in conjunction -status)
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH X% SH S S% A B C D 
