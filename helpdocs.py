@@ -782,7 +782,7 @@ def help(arg=None):
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
 
-    elif arg == "query" or "q":
+    elif arg == "query":
         embed.title = "!query"
         embed.description = "Allows for precise star rating filtering on typical leaderboards for registered users"
         embed.add_field(name="Command parameters", value="""```ahk
@@ -1127,7 +1127,7 @@ def help(arg=None):
 
 #Beatmap commands
 
-    elif arg == "beatmaps" or "b":
+    elif arg == "beatmaps":
         embed.title = "!beatmaps"
         embed.description = "Returns statistics of a set of beatmaps"
         embed.add_field(name="Command parameters", value="""```ahk
@@ -1180,7 +1180,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 ```""",inline=False)
 
-    elif arg == "beatmapsets" or "bs":
+    elif arg == "beatmapsets":
         embed.title = "!beatmapsets"
         embed.description = "Returns statistics of beatmap sets"
         embed.add_field(name="Command parameters", value="""```ahk
