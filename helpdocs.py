@@ -1760,7 +1760,7 @@ See !help for list of commands
     elif arg == "respektive":
         embed.color=0xc85050
         embed.title = "罗纳德 respektive 麦当劳 clown 精神错乱 incident"
-    elif arg == "test";
+    elif arg == "test":
         embed.title = "a"
 #return the generated embed to bot
     return embed
