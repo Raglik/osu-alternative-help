@@ -67,7 +67,6 @@ def help(arg=None):
 `nomodnumberones`
 `numberones`
 `replayswatched`
-`top1s`
 """,inline = True)   
         embed.add_field(name = "Score:", value = """
 `rankedscore`
@@ -117,7 +116,7 @@ def help(arg=None):
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
 -o: leaderboard option in multi-purpose commands
--letter: X XH SH S A B C D
+-letter: X XH X% SH S S% A B C D 
 -is_ss, -is_ht, -is_dt, etc. : true/false
 -is: hd, hdhrdt, etc. short for -is_mod true
 -isnot: hd, hdhrdt, etc. short for -is_mod false
@@ -131,6 +130,8 @@ def help(arg=None):
 -acc-max: maximal acc to include (exclusive)
 -pp-min: minimal pp to include (inclusive)
 -pp-max: maximal pp to include (exclusive)
+-played-start: earliest date played maps to include
+-played-end: latest date played maps to include
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -143,6 +144,7 @@ def help(arg=None):
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-ar-range, -od-range, -cs-range, -length-range, etc: range of parameters
 -tags: queue a subset of maps with given tags
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
@@ -712,7 +714,7 @@ def help(arg=None):
 -mods 1: Returns the amount of beatmaps based on the mod score (use in conjunction -status)
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
--letter: X XH SH S A B C D
+-letter: X XH X% SH S S% A B C D 
 -is_ss, -is_ht, -is_dt, etc. : true/false
 -is: hd, hdhrdt, etc. short for -is_mod true
 -isnot: hd, hdhrdt, etc. short for -is_mod false
@@ -724,6 +726,8 @@ def help(arg=None):
 -max: maximal star rating of maps to include (exclusive)
 -pp-min: minimal pp to include (inclusive)
 -pp-max: maximal pp to include (exclusive)
+-played-start: earliest date played maps to include
+-played-end: latest date played maps to include
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -752,7 +756,7 @@ def help(arg=None):
 -o: nomodscore
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
--letter: X XH SH S A B C D
+-letter: X XH X% SH S S% A B C D 
 -is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
 -replay: true/false
 -order: score, length, approved_date, accuracy, ar, od etc.
@@ -786,7 +790,7 @@ def help(arg=None):
 -status: sliderbreak
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
--letter: X XH SH S A B C D
+-letter: X XH X% SH S S% A B C D 
 -is_ss, -is_ht, -is_dt, etc. : true/false
 -is: hd, hdhrdt, etc. short for -is_mod true
 -isnot: hd, hdhrdt, etc. short for -is_mod false
@@ -799,6 +803,8 @@ def help(arg=None):
 -pp-max: maximal pp to include (exclusive)
 -playcount-min: minimum amount of playcount to include (inclusive)
 -playcount-max: maximum amount of playcount to include (exclusive)
+-played-start: earliest date played maps to include
+-played-end: latest date played maps to include
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -810,6 +816,7 @@ def help(arg=None):
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-ar-range, -od-range, -cs-range, -length-range, etc: range of parameters
 -tags: queue a subset of maps with given tags
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
@@ -830,7 +837,7 @@ def help(arg=None):
         embed.description = "Queues up a player for a full check of a specified set of beatmaps. Please use extensive parameters to limit the set. \
                                               Maximum amount of scores a user is allowed to queue is 1000. To check the queue time, use !queuelength."
         embed.add_field(name="Optional parameters", value="""```ahk
--letter: X XH SH S A B C D
+-letter: X XH X% SH S S% A B C D 
 -is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -1389,7 +1396,7 @@ See !help query for all parameters
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
 -o: ss, fc, clears, plays, score
--letter: X XH SH S A B C D
+-letter: X XH X% SH S S% A B C D 
 -is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -1419,7 +1426,7 @@ See !help query for all parameters
         embed.description = "Returns a leaderboard for the entirety of project 2022."
         embed.add_field(name="Optional parameters", value="""```ahk
 -o: ss, fc, clears, plays, score
--letter: X XH SH S A B C D
+-letter: X XH X% SH S S% A B C D 
 -is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true/false
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -1641,7 +1648,7 @@ See !help query for all parameters
 -status: used in conjunction with -o status or -o mods, allows for the same filtering as !getscores
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
--letter: X XH SH S A B C D
+-letter: X XH X% SH S S% A B C D 
 -is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true / false
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
@@ -1674,7 +1681,7 @@ See !help query for all parameters
 -status: used in conjunction with -o status or -o mods, allows for the same filtering as !getscores
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
--letter: X XH SH S A B C D
+-letter: X XH X% SH S S% A B C D 
 -is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true / false
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
