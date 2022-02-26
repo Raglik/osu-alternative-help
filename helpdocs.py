@@ -782,7 +782,7 @@ def help(arg=None):
 -u: specify a user (For a space in the username, use "+")
 ```""",inline=False)
 
-    elif arg == "query" or "q":
+    elif arg == "query":
         embed.title = "!query"
         embed.description = "Allows for precise star rating filtering on typical leaderboards for registered users"
         embed.add_field(name="Command parameters", value="""```ahk
