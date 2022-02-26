@@ -795,16 +795,11 @@ def help(arg=None):
 -is: hd, hdhrdt, etc. short for -is_mod true
 -isnot: hd, hdhrdt, etc. short for -is_mod false
 -mods: ht, nfso, dthrfl, hd, ezhtnfhdfl, etc.
--min: minimal star rating of maps to include (inclusive)
--max: maximal star rating of maps to include (exclusive)
--acc-min: minimal acc to include (inclusive)
--acc-max: maximal acc to include (exclusive)
--pp-min: minimal pp to include (inclusive)
--pp-max: maximal pp to include (exclusive)
--playcount-min: minimum amount of playcount to include (inclusive)
--playcount-max: maximum amount of playcount to include (exclusive)
--played-start: earliest date played maps to include
--played-end: latest date played maps to include
+-min/-max: minimal/maximal star rating of maps to include (inclusive)/(exclusive)
+-acc-min/max: minimal/maximum acc to include (inclusive)/(exclusive)
+-pp-min/max: minimal/maximum pp to include (inclusive)/(exclusive)
+-playcount-min/max: minimum/maximum amount of playcount to include (inclusive)/(exclusive)
+-played-start/end: earliest/latest date played maps to include
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
