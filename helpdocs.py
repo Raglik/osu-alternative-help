@@ -703,7 +703,7 @@ def help(arg=None):
 
 #Advanced commands
 
-    elif arg == "getscores":
+    elif arg == "getscores" or "gs":
         embed.title = "!getscores"
         embed.description = "Returns maps in the database for a user based on specific criteria."
         embed.add_field(name="Command parameters", value="""```ahk
