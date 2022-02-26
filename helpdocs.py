@@ -1127,7 +1127,7 @@ def help(arg=None):
 
 #Beatmap commands
 
-    elif arg == "beatmaps":
+    elif arg == "beatmaps" or "b":
         embed.title = "!beatmaps"
         embed.description = "Returns statistics of a set of beatmaps"
         embed.add_field(name="Command parameters", value="""```ahk
@@ -1180,7 +1180,7 @@ def help(arg=None):
 -p: specify the resulting page to output
 ```""",inline=False)
 
-    elif arg == "beatmapsets":
+    elif arg == "beatmapsets" or "bs":
         embed.title = "!beatmapsets"
         embed.description = "Returns statistics of beatmap sets"
         embed.add_field(name="Command parameters", value="""```ahk
