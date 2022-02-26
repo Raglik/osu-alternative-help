@@ -722,10 +722,10 @@ def help(arg=None):
 -replay: true/false
 -order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
--min/-max: minimal/maximal star rating of maps to include (inclusive)/(exclusive)
--acc-min/max: minimal/maximum acc to include (inclusive)/(exclusive)
--pp-min/max: minimal/maximum pp to include (inclusive)/(exclusive)
--playcount-min/max: minimum/maximum amount of playcount to include (inclusive)/(exclusive)
+-min/-max: minimal/maximal star rating of maps to include 
+-acc-min/max: minimal/maximum acc to include 
+-pp-min/max: minimal/maximum pp to include 
+-playcount-min/max: minimum/maximum amount of playcount to include 
 -played-start/end: earliest/latest date played maps to include
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
@@ -795,10 +795,10 @@ def help(arg=None):
 -is: hd, hdhrdt, etc. short for -is_mod true
 -isnot: hd, hdhrdt, etc. short for -is_mod false
 -mods: ht, nfso, dthrfl, hd, ezhtnfhdfl, etc.
--min/-max: minimal/maximal star rating of maps to include (inclusive)/(exclusive)
--acc-min/max: minimal/maximum acc to include (inclusive)/(exclusive)
--pp-min/max: minimal/maximum pp to include (inclusive)/(exclusive)
--playcount-min/max: minimum/maximum amount of playcount to include (inclusive)/(exclusive)
+-min/-max: minimal/maximal star rating of maps to include 
+-acc-min/max: minimal/maximum acc to include 
+-pp-min/max: minimal/maximum pp to include 
+-playcount-min/max: minimum/maximum amount of playcount to include 
 -played-start/end: earliest/latest date played maps to include
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
@@ -1648,10 +1648,10 @@ See !help query for all parameters
 -is: hd, hdhrdt, etc. short for -is_mod true
 -isnot: hd, hdhrdt, etc. short for -is_mod false
 -mods: ht, nfso, dthrfl, hd, ezhtnfhdfl, etc.
--min/-max: minimal/maximal star rating of maps to include (inclusive)/(exclusive)
--acc-min/max: minimal/maximum acc to include (inclusive)/(exclusive)
--pp-min/max: minimal/maximum pp to include (inclusive)/(exclusive)
--playcount-min/max: minimum/maximum amount of playcount to include (inclusive)/(exclusive)
+-min/-max: minimal/maximal star rating of maps to include 
+-acc-min/max: minimal/maximum acc to include 
+-pp-min/max: minimal/maximum pp to include 
+-playcount-min/max: minimum/maximum amount of playcount to include 
 -played-start/end: earliest/latest date played maps to include
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
