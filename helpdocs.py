@@ -732,7 +732,7 @@ def help(arg=None):
 -year: specify a year
 -unplayed: true
 -tragedy: 100, 50, x, miss
--score: minimum score to include (inclusive)
+-score: minimum score to include
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
@@ -761,8 +761,10 @@ def help(arg=None):
 -replay: true/false
 -order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
--min: minimal star rating of maps to include (inclusive)
--max: maximal star rating of maps to include (exclusive)
+-acc-min/max: minimal/maximum acc to include 
+-pp-min/max: minimal/maximum pp to include 
+-min/-max: minimal/maximal star rating of maps to include 
+-played-start/end: earliest/latest date played maps to include
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -770,6 +772,7 @@ def help(arg=None):
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-ar-range, -od-range, -cs-range, -length-range, etc: range of parameters
 -tags: queue a subset of maps with given tags
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
@@ -1658,7 +1661,7 @@ See !help query for all parameters
 -year: specify a year
 -rank: number of rank #
 -unplayed: true
--score: minimum score to include (inclusive)
+-score: minimum score to include 
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
@@ -1692,7 +1695,7 @@ See !help query for all parameters
 -year: specify a year
 -rank: number of rank #
 -unplayed: true
--score: minimum score to include (inclusive)
+-score: minimum score to include
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
