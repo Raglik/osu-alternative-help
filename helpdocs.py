@@ -722,12 +722,11 @@ def help(arg=None):
 -replay: true/false
 -order: score, length, approved_date, accuracy, ar, od etc.
 -direction: desc, asc
--min: minimal star rating of maps to include (inclusive)
--max: maximal star rating of maps to include (exclusive)
--pp-min: minimal pp to include (inclusive)
--pp-max: maximal pp to include (exclusive)
--played-start: earliest date played maps to include
--played-end: latest date played maps to include
+-min/-max: minimal/maximal star rating of maps to include (inclusive)/(exclusive)
+-acc-min/max: minimal/maximum acc to include (inclusive)/(exclusive)
+-pp-min/max: minimal/maximum pp to include (inclusive)/(exclusive)
+-playcount-min/max: minimum/maximum amount of playcount to include (inclusive)/(exclusive)
+-played-start/end: earliest/latest date played maps to include
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -737,6 +736,7 @@ def help(arg=None):
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-ar-range, -od-range, -cs-range, -length-range, etc: range of parameters
 -tags: queue a subset of maps with given tags
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
@@ -1644,9 +1644,15 @@ See !help query for all parameters
 ```""",inline=False)
         embed.add_field(name="Optional parameters", value="""```ahk
 -letter: X XH X% SH S S% A B C D 
--is_ss,-is_fc,-is_ht,-is_dt,-is_hr and etc. : true / false
--min: minimal star rating of maps to include (inclusive)
--max: maximal star rating of maps to include (exclusive)
+-is_ss, -is_ht, -is_dt, etc. : true/false
+-is: hd, hdhrdt, etc. short for -is_mod true
+-isnot: hd, hdhrdt, etc. short for -is_mod false
+-mods: ht, nfso, dthrfl, hd, ezhtnfhdfl, etc.
+-min/-max: minimal/maximal star rating of maps to include (inclusive)/(exclusive)
+-acc-min/max: minimal/maximum acc to include (inclusive)/(exclusive)
+-pp-min/max: minimal/maximum pp to include (inclusive)/(exclusive)
+-playcount-min/max: minimum/maximum amount of playcount to include (inclusive)/(exclusive)
+-played-start/end: earliest/latest date played maps to include
 -start: earliest rank date of maps to include
 -end: latest rank date of maps to include
 -year: specify a year
@@ -1656,6 +1662,7 @@ See !help query for all parameters
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-ar-range, -od-range, -cs-range, -length-range, etc: range of parameters
 -tags: queue a subset of maps with given tags
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
