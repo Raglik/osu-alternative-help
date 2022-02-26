@@ -1713,7 +1713,6 @@ See !help query for all parameters
         embed.description = "Returns the entire list in a file, if discord allows it."
         embed.description = "Returns a csv file of the specified type, if discord allows it."
         embed.add_field(name="Command parameters", value="""```ahk
--type: List to fetch. neverbeenssed, neverbeenfced
 -type: List to fetch. neverbeenssed, neverbeenfced, scores
 -u: user for scores
 ```""",inline=False)
