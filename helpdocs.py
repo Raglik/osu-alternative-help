@@ -807,7 +807,7 @@ def help(arg=None):
 -country: specify a country using the ISO 2 letter code
 -registered: false
 -tragedy: 100, 50, x, miss
--score: minimum score to include (inclusive)
+-score: minimum score to include
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
 -ar-min, -od-max, -cs-min, -length-max, etc: map parameters
