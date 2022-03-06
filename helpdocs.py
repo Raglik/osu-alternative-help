@@ -130,6 +130,8 @@ def help(arg=None):
 -acc-max: maximal acc to include (exclusive)
 -pp-min: minimal pp to include (inclusive)
 -pp-max: maximal pp to include (exclusive)
+```""",inline=False)
+                embed.add_field(name="More optional parameters", value="""```ahk
 -played-start: earliest date played maps to include
 -played-end: latest date played maps to include
 -start: earliest rank date of maps to include
