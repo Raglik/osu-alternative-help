@@ -37,6 +37,7 @@ def help(arg=None):
 `beatmaps`
 `beatmaplist`
 `beatmapsets`
+`longestwait`
 `maxscore`
 `most_static`
 `nomodscore`
@@ -1197,7 +1198,26 @@ def help(arg=None):
 -year: specify a year
 ```""",inline=False)
         embed.add_field(name="Beatmap parameters", value="""```ahk
--length-min, -length-max
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
+-tags: queue a subset of maps with given tags
+-title: queue a subset of maps with a given title
+-mapper: queue a subset of maps with a given mapper name
+-artist: queue a subset of maps with a given artist name
+-diff: queue a subset of maps with a given difficulty name
+```""",inline=False)
+
+    elif arg == "longestwait":
+        embed.title = "!longestwait"
+        embed.description = "A leaderboard of mapsets of in days between submitted date and ranked date"
+        embed.add_field(name="Optional parameters", value="""```ahk
+-min: minimal star rating of maps to include (inclusive)
+-max: maximal star rating of maps to include (exclusive)
+-start: earliest rank date of maps to include
+-end: latest rank date of maps to include
+-year: specify a year
+```""",inline=False)
+        embed.add_field(name="Beatmap parameters", value="""```ahk
+-ar-min, -od-max, -cs-min, -length-max, etc: map parameters
 -tags: queue a subset of maps with given tags
 -title: queue a subset of maps with a given title
 -mapper: queue a subset of maps with a given mapper name
