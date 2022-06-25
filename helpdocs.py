@@ -1210,7 +1210,7 @@ def help(arg=None):
 
     elif arg == "longestwait":
         embed.title = "!longestwait"
-        embed.description = "A leaderboard of mapsets of in days between submitted date and ranked date"
+        embed.description = "Displays mapsets with a difference in days between submitted date and ranked date"
         embed.add_field(name="Optional parameters", value="""```ahk
 -min: minimal star rating of maps to include (inclusive)
 -max: maximal star rating of maps to include (exclusive)
